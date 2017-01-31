@@ -1,5 +1,10 @@
 angular.module('toolkitApp', ['appControllers','appDirectives','appServices','appRoutes','ngAnimate', 'ngMaterial'])
-.config(function($sceDelegateProvider) {
+.config(function($sceDelegateProvider, $mdThemingProvider) {
+    
+    $mdThemingProvider.theme('default')
+    .primaryPalette('indigo')
+    .accentPalette('pink');
+    
     if ('serviceWorker' in navigator) {
         console.log('Service Worker is supported');
         navigator.serviceWorker.register('sw.js').then(function(reg) {
