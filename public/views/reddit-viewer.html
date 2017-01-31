@@ -1,0 +1,53 @@
+<script>
+    document.title = "Reddit Viewer";
+</script>
+
+<div layout="column" layout-fill>
+    <div flex-gt-sm="15" flex="15">
+        <div layout="row" layout-align="center center">
+            <md-select placeholder="Select Sub Reddit" ng-model="selectedSubReddit" flex-gt-sm="30" flex-lt-sm="80">
+                <md-option ng-value="subreddit" ng-repeat="subreddit in subreddits">{{subreddit}}</md-option>
+            </md-select>
+        </div>
+    </div>
+    <div flex-gt-sm="10" flex="10">
+        <div layout="row" layout-align="center center">
+            <md-button class="md-raised md-primary" ng-click='getPage()'>Get Page</md-button>
+        </div>
+    </div>
+    <div flex-gt-sm="65" ng-if="posts.length > 0" flex="65" style="overflow-y: auto">
+        <div layout="row" layout-align="center center" layout-wrap>
+            <md-list>
+                <md-list-item class="md-2-line" ng-repeat="post in posts">
+                    <div class="md-list-item-text" layout="column">
+                    
+                        <md-card md-theme="{{ showDarkTheme ? 'dark-orange' : 'default' }}" md-theme-watch>
+                            <md-card-title>
+                                <md-card-title-text>
+                                    <span class="md-headline">{{ post.data.title }}</span>
+                                    <span class="md-subhead">{{ post.data.selftext }}</span>
+                                </md-card-title-text>
+                            </md-card-title>
+                            <md-card-content layout="row" layout-align="space-between">
+                                <div class="md-media-xl card-media" ng-if="post.imageUrl">
+                                    <img src="{{post.imageUrl}}" alt="No Image" />
+                                </div>
+                        
+                                <md-card-actions layout="column" ng-if="post.data.thumbnail !== ''">
+                                    <md-button class="md-raised md-primary" ng-click='getImage(post)'>View Image</md-button>
+                                </md-card-actions>
+                            </md-card-content>
+                        </md-card>
+                    </div>
+                </md-list-item>
+            </md-list>
+        </div>
+    </div>
+    <div flex-gt-sm="10" flex="10" ng-if="posts.length > 0">
+        <div layout="row" layout-align="center center">
+            <md-button class="md-raised md-primary" ng-click='prevPage()'>Prev Page</md-button>
+            <md-button class="md-raised md-primary" ng-click='nextPage()'>Next Page</md-button>
+        </div>
+    </div>
+</div>
+

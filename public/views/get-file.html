@@ -1,0 +1,26 @@
+<script>
+    document.title = "Get File";
+</script>
+<form novalidate name='fileForm'>
+    <div layout="column" layout-fill>
+        <div flex-gt-sm="15">
+            <div layout="row" layout-align="center center">
+                <md-input-container flex-gt-sm="30" flex-sm="80" flex-xs="100">
+                    <label>Enter the Download Url</label>
+                    <input ng-model="fileUrl" type="url"  name="fileUrl" required>
+                </md-input-container>
+            </div>
+            
+            <div layout="row" layout-align="center center">
+                <md-input-container flex-gt-sm="30" flex-sm="80" flex-xs="100">
+                    <label>Enter the Zip Name</label>
+                    <input ng-model="zipName" type="text" name="zipName" required>
+                </md-input-container>
+            </div>
+            
+            <div layout="row" layout-align="center center">
+                <md-button class="md-raised md-primary" ng-disabled='!fileForm.$valid' ng-click='getFile()'>Get File</md-button>
+            </div>
+        </div>
+    </div>
+</form>

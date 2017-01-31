@@ -1,0 +1,2024 @@
+{
+	"productsForUser": ["PR_PRO_SERVICES_ANR", "PR_BUS_CON", "PR_DAS","PR_DOS","PR_IDS", "PR_PIP_SVC", "PR_PRO_SERVICES_RRR", "PR_CPE_SITEREADY", "PR_MSSP_SEC_APP_USS", "PR_USS_CLD", "PR_PIP_SVC_SCI", "PR_VCE", "PR_VER_SDP", "PR_VNS"],
+	"enableEmail": ["PR_PRO_SERVICES_ANR", "PR_BUS_CON","PR_DAS", "PR_DOS","PR_PRO_SERVICES_RRR", "PR_CPE_SITEREADY", "PR_MSSP_SEC_APP_USS","PR_USS_CLD", "PR_PIP_SVC_SCI"],
+	"initiateContract": ["PR_CPE_SITEREADY"],
+	"copyAllowDate":"2016-06-24",
+	"geoCodeUrl":"https://maps.googleapis.com/maps/api/geocode/json?address=",
+	"activeContractIcon" :"Yes",
+    "smartCart":"Yes",
+	"enableContractSales":"Yes",
+	"enableHelpGuide": "Yes",
+	"environment": "sit",
+	"enableNotifications": "Yes",
+	"enableWSS":"No",
+	"enableDownloadPdf":"No",
+	"enableCreateProfile":"Yes",
+	"dashPolling":"180000",
+	"createProfileMsg":"<b>Steps to Register : </b><br/>1. Please go to the <a href=\"https://proquest-sita.ebiz.verizon.com/operations\">https://proquest-sita.ebiz.verizon.com/operations</a>.<br/>2. Click on Registration and then click on create New Ordering request.<br/>3. Select either MobileSalesUser (Sales) or MobileTechUser (Technician) Role to request access to VRDMobile.<br/>4. You should be able to login once your manager and the trustee approve your request.",
+	"pollingRate": "180000",
+	"enableEZStatus": "NewFlow",
+	"enableEdit": "TRUE",
+	"pdfProxyLink":"https://proquest-sita.ebiz.verizon.com/vrdmobileappserver/fetchPDF/getPDF?pdfLink=",
+	"vrdProtocol":"window.location.protocol",
+	"logoffSite" :"https://login.vzbi.com/siteminderagent/forms/logout.jsp",
+	"vrdPathname":"/cwservices/VRDMobileAppService/",
+	"vrdAlternatePathname": "/vrdmobileappserver",
+	"vrdUrl":"window.location.host",
+	"cloudUrl":"http://vrd-moat-v040312.cfappssandbox.ebiz.verizon.com",
+	"cloudPathname":"/vrdmobileSrvc",
+	"ezStatusUrl":"102-114-114-110-56-49-49-103-120-117-114-103-117-114-99-110-110-53-44-103-96-107-120-44-116-103-112-107-120-113-108-44-101-113-111-56-57-46-46-52-49-103-120-117-116-112-98-113-112-117-103-112-116-107-101-103-34-87-76-81-34-87-76-81-47-114-103-117-114-51",
+	"ezStatusUrlProd":"102-114-114-110-56-49-49-117-114-123-113-111-120-117-110-99-46-51-44-116-103-112-107-120-113-108-44-101-113-111-56-57-46-46-52-49-103-120-117-116-112-98-113-112-117-103-112-116-107-101-103-34-87-76-81-34-87-76-81-47-110-112-113-98-51",
+	"ezStatusProxyBAUUrl":"https://proquest-sita.ebiz.verizon.com/vrdmobileappserver/ezStatus",
+	"ezStatusProxyUrl":"http://sales2go-services-v040312.cfappssandbox.ebiz.verizon.com/ezStatus",
+	"ezStatusProxyBAUURI":"/ezStatus",
+	"ezStatusProxyCloudURI":"/ezStatus",
+	"BAUBaseURL":"https://proquest-sita.ebiz.verizon.com/vrdmobileappserver",
+	"CloudBaseURL":"http://sales2go-services-v040312.cfappssandbox.ebiz.verizon.com",
+	"contractTerms":["12","24","36","48","60"],
+	"emailTechContent":"<p>Verizon is pleased to provide ACME FABRICATION, LLC with a quote for Site Ready services. During a recent site survey, Verizon identified that additional site preparation work at your facilities is required prior to the installation of Verizon's Ethernet service. For an additional charge, Verizon will coordinate, perform and complete this work prior to the scheduled installation of your new Verizon Ethernet service.</p><p>Please review the attached quote.</p><p>Verizon requests your response within 72 hours by identifying if you want to proceed with ordering Verizon's Site Ready service or if you choose to decline the Site Ready service from Verizon.</p><p>To proceed with ordering Verizon's Site Ready service please reply to this email and a Verizon Representative will be in contact with you to initiate a contract. Any technical questions regarding your quote may also be included in your response.</p><p>If you do not want the Site Ready service from Verizon, please provide a date when your facilities will be ready. You are still required to have your facilities ready prior to the scheduled installation of Verizon's Ethernet service.</p><p>Thank you,</p><p>Hitesh</p><p>Verizon</p>",
+	"editEmailSales":"N",
+	"editEmailTech":"N",
+	"toggleCardType":{
+                "toggleCardType": "true"
+    },
+    "productAcronyms":{
+        "srs": "salesCustom",
+        "uss": "additionalOptions",
+        "int": "standardCustom",
+        "pip": "standardCustom",
+        "bcs": "standardCustom",
+        "vce": "vcCustomOnly",
+        "vns": "vnsCustomOnly",
+        "sci": "sciMap",
+        "sdp": "addtionalCustom",
+        "ussc" :"additionalOptions",
+        "das"  : "additionalOptions"
+    },
+    "smartQuoteProducts": [
+        "int", "pip", "bcs", "vce", "vns","sdp"
+    ],
+	"products": {
+		"anr": {
+			"code": "PR_PRO_SERVICES_ANR",
+			"title": "Advanced Network Retainer",
+			"saleEnable":"Y",
+			"techEnable":"Y",
+			"generalDescription": "ANR provides a pool of Network PS Sr. Consultant hours, by three different level - Bronze, Silver and Gold. Customer can select one of five possible advanced network technology areas and utilize Verizon Sr. network consultants for a year, without requiring a new SOW. ANR also provides add-on hours with a discounted hourly rate.",
+			"standardPackages": {
+				"PS_BRONZE": {
+					"title": "Bronze",
+					"attributes": {
+						"Initial Discovery & Planning (24 Hours Onsite) ": "40 Hours",
+						"Included Hours": "100",
+						"Rate for Additional Hours": "$180",
+						"Ongoing Sr. Consultant Support": "16"
+					}
+				},
+				"PS_SILVER": {
+					"title": "Silver",
+					"attributes": {
+						"Initial Discovery & Planning (24 Hours Onsite) ": "40 Hours",
+						"Included Hours": "200",
+						"Rate for Additional Hours": "$170",
+						"Ongoing Sr. Consultant Support": "32"
+					}
+				},
+				"PS_GOLD": {
+					"title": "Gold",
+					"attributes": {
+						"Initial Discovery & Planning (24 Hours Onsite) ": "40 Hours",
+						"Included Hours": "400",
+						"Rate for Additional Hours": "$160",
+						"Ongoing Sr. Consultant Support": "48"
+					}
+				}
+			},
+			"customAttributes": {
+				"terms":["12","24","36","48","60"]
+			}
+		},
+		"bcs": {
+			"code": "PR_BUS_CON",
+			"title": "Business Connection",
+			"saleEnable":"Y",
+			"techEnable":"Y",
+			"customType":"Bc",
+			"code": "PR_BUS_CON",
+			"rtbProductCode":["SL_IPBB"],
+			"generalDescription": "Business Connection is an all-in-one voice, data and Internet solution designed for businesses that want a cost-effective solution to carry voice and data over the same IP network. This service works with any existing Key or PBX System and does not require additional investment in costly infrastructure or desktop equipment. Verizon provides a reliable, business-class solution complete with installation and ongoing maintenance in one package.",
+			"standardPackages": {
+				"BCS_SMALL": {
+					"title": "Small",
+					"attributes": {
+						"Access Speed in Mbps": "1.5",
+						"Transport": "Internet Dedicated Service",
+						"VoIP Concurrent Calls": "12",
+						"CPE": "ADTRAN TA 924e with Vz Installation and Maintenance"
+					}
+				},
+				"BCS_MEDIUM": {
+					"title": "Medium",
+					"attributes": {
+						"Access Speed in Mbps": "10",
+						"Transport": "Internet Dedicated Service",
+						"VoIP Concurrent Calls": "8",
+						"CPE": "ADTRAN TA 924e with Vz Installation and Maintenance"
+					}
+				},
+				"BCS_LARGE": {
+					"title": "Large",
+					"attributes": {
+						"Access Speed in Mbps": "50",
+						"Transport": "Internet Dedicated Service",
+						"VoIP Concurrent Calls": "24",
+						"CPE": "ADTRAN TA 924e with Vz Installation and Maintenance"
+					}
+				}
+			},
+			"customAttributes": {
+				"speeds": ["1.5 Mbps", "3 Mbps", "4.6 Mbps", "5 Mbps", "6 Mbps", "10 Mbps", "20 Mbps", "30 Mbps", "40 Mbps", "50 Mbps", "100 Mbps"],
+				"concurrentCalls":["4","8","12","16","20","24","32","40","48"],
+				"terms":["24","36"]
+			}
+		},
+		"das": {
+			"code": "PR_DAS",
+			"title": "Digital Advisory Services",
+			"saleEnable":"Y",
+			"techEnable":"Y",
+			"isProductControlled":"TRUE",
+			"generalDescription": "This Digital Advisory Services SOW is entered pursuant to the service order form (“SOF”) between the entities identified as, respectively, Verizon and Customer in the SOF executed between Verizon and Customer.Digital Advisory Services provides an initial workshop .Together with any other terms set forth in this SOW, the SOF, the Master Terms, and PSA are hereinafter collectively referred to as the Agreement.",
+			"preselectorOption":["Contact Center","Cloud","Network","Unified Communications","VOIP"],
+			"preselectorOptionRelationShip":{
+				"Contact Center": ["DAS_CCS_BRONZE","DAS_CCS_SILVER","DAS_CCS_GOLD"],
+				"Cloud": ["DAS_CLOUD_BRONZE","DAS_CLOUD_SILVER", "DAS_CLOUD_GOLD"],
+	        	"Network": ["DAS_NET_BRONZE","DAS_NET_SILVER", "DAS_NET_GOLD"],
+				"Unified Communications": ["DAS_UCC_BRONZE","DAS_UCC_SILVER","DAS_UCC_GOLD"],
+				"VOIP": ["DAS_VOIP_BRONZE","DAS_VOIP_SILVER","DAS_VOIP_GOLD"]
+			},
+			"preselectorTitle":"Select Group",
+			"standardPackages": {
+				"DAS_CCS_BRONZE": {
+					"title": "Bronze",
+					"attributes": {
+						"Fixed price": "$30,000",
+						"Consulting hours included": "100",
+						"Rate for Additional Hours": "$180"
+					}
+				},
+				"DAS_CCS_SILVER": {
+					"title": "Silver",
+					"attributes": {
+						"Fixed price": "$50,000",
+						"Consulting hours included": "200",
+						"Rate for Additional Hours": "$170"
+					}
+				},
+				"DAS_CCS_GOLD": {
+					"title": "Gold",
+					"attributes": {
+						"Fixed price": "$85,000",
+						"Consulting hours included": "400",
+						"Rate for Additional Hours": "$160"
+					}
+				},
+				"DAS_CLOUD_BRONZE": {
+					"title": "Bronze",
+					"attributes": {
+						"Fixed price": "$30,000",
+						"Consulting hours included": "100",
+						"Rate for Additional Hours": "$180"
+					}
+				},
+				"DAS_CLOUD_SILVER": {
+					"title": "Silver",
+					"attributes": {
+						"Fixed price": "$50,000",
+						"Consulting hours included": "200",
+						"Rate for Additional Hours": "$170"
+					}
+				},
+				"DAS_CLOUD_GOLD": {
+					"title": "Gold",
+					"attributes": {
+						"Fixed price": "$85,000",
+						"Consulting hours included": "400",
+						"Rate for Additional Hours": "$160"
+					}
+				},
+				"DAS_NET_BRONZE": {
+					"title": "Bronze",
+					"attributes": {
+						"Fixed price": "$30,000",
+						"Consulting hours included": "100",
+						"Rate for Additional Hours": "$180"
+					}
+				},
+				"DAS_NET_SILVER": {
+					"title": "Silver",
+					"attributes": {
+						"Fixed price": "$50,000",
+						"Consulting hours included": "200",
+						"Rate for Additional Hours": "$170"
+					}
+				},
+				"DAS_NET_GOLD": {
+					"title": "Gold",
+					"attributes": {
+						"Fixed price": "$85,000",
+						"Consulting hours included": "400",
+						"Rate for Additional Hours": "$160"
+					}
+				},
+				"DAS_UCC_BRONZE": {
+					"title": "Bronze",
+					"attributes": {
+						"Fixed price": "$30,000",
+						"Consulting hours included": "100",
+						"Rate for Additional Hours": "$180"
+					}
+				},
+				"DAS_UCC_SILVER": {
+					"title": "Silver",
+					"attributes": {
+						"Fixed price": "$50,000",
+						"Consulting hours included": "200",
+						"Rate for Additional Hours": "$170"
+					}
+				},
+				"DAS_UCC_GOLD": {
+					"title": "Gold",
+					"attributes": {
+						"Fixed price": "$85,000",
+						"Consulting hours included": "400",
+						"Rate for Additional Hours": "$160"
+					}
+				},
+				"DAS_VOIP_BRONZE": {
+					"title": "Bronze",
+					"attributes": {
+						"Fixed price": "$30,000",
+						"Consulting hours included": "100",
+						"Rate for Additional Hours": "$180"
+					}
+				},
+				"DAS_VOIP_SILVER": {
+					"title": "Silver",
+					"attributes": {
+						"Fixed price": "$50,000",
+						"Consulting hours included": "200",
+						"Rate for Additional Hours": "$170"
+					}
+				},
+				"DAS_VOIP_GOLD": {
+					"title": "Gold",
+					"attributes": {
+						"Fixed price": "$85,000",
+						"Consulting hours included": "400",
+						"Rate for Additional Hours": "$160"
+					}
+				}
+
+			},
+			"customAttributes": {
+				"terms":["12","24","36","48","60"]
+			}
+		},
+		"dos": {
+			"code": "PR_DOS",
+			"title": "DDoS Shield ",
+			"saleEnable":"Y",
+            "isProductControlled":"TRUE",
+			"rtbProductCode":["PR_DDOS"],
+			"generalDescription": "The DDOS is a new approach to security that creates dynamically provisioned, “virtually air-gapped networks” anywhere in the world. An air-gapped network is one that is completely isolated from all unsecured networks, and which, therefore, mitigates network-based attacks. ",
+			"standardPackages": {
+				"DOS_XSMALL": {
+					"title": "X-Small",
+					"attributes": {
+                       "Speed up to": "Maximum of 50 Mbps clean inbound traffic ",
+                        "Circuit": " 1 circuit return",
+                        "Space": "CIDR /24 of IP Space",
+                        "Migration": "Customer triggered migration"
+                    }
+				},
+				"DOS_SMALL": {
+					"title": "Small",
+					"attributes": {
+                       "Speed up to": "Maximum of 100 Mbps clean inbound traffic  ",
+                        "Circuit": " 1 circuit return",
+                        "Space": "CIDR /22 of IP Space",
+                        "Migration": "Customer triggered migration"
+                    }
+				},
+				"DOS_MEDIUM": {
+					"title": "Medium",
+					"attributes": {
+                        "Speed up to": "Maximum of 500 Mbps clean inbound traffic   ",
+                        "Circuit": " 1 circuit return",
+                        "Space": "CIDR /20 of IP Space",
+                        "Migration": "Customer triggered migration"
+                    }
+				},
+				"DOS_LARGE": {
+					"title": "Large",
+					"attributes": {
+                        "Speed up to": "Maximum of 1000 Mbps (1Gbps) clean inbound traffic   ",
+                        "Circuit": " 1 circuit return",
+                        "Space": "CIDR /18 of IP Space",
+                        "Migration": "Customer triggered migration"
+                    }
+				},
+				"DOS_XLARGE": {
+					"title": "X-Large",
+					"attributes": {
+                        "Speed up to": "Maximum of 10000 Mbps (10Gbps) clean inbound traffic",
+                        "Circuit": " 1 circuit return",
+                        "Space": "CIDR /16 of IP Space",
+                        "Migration": "Customer triggered migration"
+                    }
+	            }
+	        },
+            "customAttributes": {
+				"terms":["12","24","36","48","60"]
+			}
+		},
+		"int": {
+			"code": "PR_IDS",
+			"title": "Internet",
+			"saleEnable":"Y",
+			"techEnable":"Y",
+			"customType":"Int",
+			"isProductControlled":"TRUE",
+			"rtbProductCode":["PR_IDS"],
+			"generalDescription": "Internet solution is designed for businesses that need of a cost-effective solution to carry voice and data over the same IP network. This service works with any existing Key or PBX System and does not require additional investment in costly infrastructure or desktop equipment.",
+			"standardPackages": {
+				"IDS_PUBLIC_MD_BASE_10M_CS": {
+					"title": "Small",
+					"attributes": {
+						"Access Speed in Mbps": "10",
+						"Type": "Ethernet",
+						"Transport": "Internet Dedicated Service",
+						"Backup":"Wireless (4G / 3G)",
+						"CPE": "Cisco Router",
+						"Express Connect": "Yes"
+					}
+				},
+				"IDS_PUBLIC_MD_BASE_20M_CS": {
+					"title": "Medium",
+					"attributes": {
+						"Access Speed in Mbps": "20",
+						"Type": "Ethernet",
+						"Transport": "Internet Dedicated Service",
+						"Backup":"Wireless (4G / 3G)",
+						"CPE": "Cisco Router",
+						"Express Connect": "Yes"
+					}
+				},
+				"IDS_PUBLIC_LG_BASE_50M": {
+					"title": "Large",
+					"attributes": {
+						"Access Speed in Mbps": "50",
+						"Type": "Ethernet",
+						"Transport": "Internet Dedicated Service",
+						"Backup":"Wireless (4G / 3G)",
+						"CPE": "Cisco Router",
+						"Express Connect": "Yes"
+					}
+				}
+			},
+			"customAttributes": {
+				"speeds": ["1.5 Mbps", "3 Mbps", "4.6 Mbps", "5 Mbps", "6 Mbps", "9 Mbps", "10 Mbps", "12 Mbps", "15 Mbps", "20 Mbps", "21 Mbps", "30 Mbps", "40 Mbps", "45 Mbps", "70 Mbps", "80 Mbps", "100 Mbps", "150 Mbps", "155 Mbps", "200 Mbps", "300 Mbps", "400 Mbps", "500 Mbps", "600 Mbps", "622 Mbps", "700 Mbps", "1 Gbps", "1.5 Gbps", "2 Gbps", "2.5 Gbps", "3 Gbps", "4 Gbps", "5 Gbps", "6 Gbps", "8 Gbps", "10 Gbps"],
+				"cpeBillingMethod":["Purchase","Monthly Recurring Plan (MRP)","Customer Provided","Direct Lease"],
+				"expressConnectReason":["Customer wants wireless backup only and is okay with install timeframe","Customer does not want wireless backup","Customer does not feel bandwidth is adequate for their application","Customer is not willing to pay NRC"],
+				"terms":["12","24","36","48","60"]
+			}
+		},
+		"pip": {
+			"code": "PR_PIP_SVC",
+			"title": "Private IP",
+			"saleEnable":"Y",
+			"techEnable":"Y",
+			"customType":"Pip",
+			"isProductControlled":"TRUE",
+			"rtbProductCode":["PR_PIP_SVC"],
+			"generalDescription": "Private IP solutions offer the scalability and connectivity of IP with the security and reliability of legacy network technologies. Private IP uses a simple network design that grows with your business and consolidates your applications onto a single network infrastructure.",
+			"standardPackages": {
+				"XS_TDM_BASE_1.5M": {
+					"title": "Small",
+					"components": ["PR_MWAN","PR_WAN_ANA_RPT"],
+					"attributes": {
+						"Speed": "1.5 Mbps",
+						"Handoff": "TDM",
+						"RealTime CAR": "0 Kbps",
+						"CPE": "CISCO 1921/K9",
+						"MWAN": "Full Service, Customer Provided",
+						"WAN Analysis": "Standard"
+					}
+				},
+				"XS_ETH_BASE_4M": {
+					"title": "Medium",
+					"components": ["PR_MWAN","PR_WAN_ANA_RPT"],
+					"attributes": {
+						"Speed": "4 Mbps",
+						"Handoff": "Ethernet",
+						"RealTime CAR": "0 Kbps",
+						"CPE": "CISCO 1921/K9",
+						"MWAN": "Full Service, Customer Provided",
+						"WAN Analysis": "Standard"
+					}
+				},
+				"SM_ETH_BASE_10M": {
+					"title": "Large",
+					"components": ["PR_MWAN","PR_WAN_ANA_RPT"],
+					"attributes": {
+						"Speed": "10 Mbps",
+						"Handoff": "Ethernet",
+						"RealTime CAR": "0 Kbps",
+						"CPE": "CISCO 1921/K9",
+						"MWAN": "Full Service, Customer Provided",
+						"WAN Analysis": "Standard"
+					}
+				}
+			},
+			"customAttributes": {
+				"speeds": ["56 Kbps", "64 Kbps", "256 Kbps", "512 Kbps", "1 Mbps", "1.5 Mbps", "2 Mbps", "3 Mbps", "4 Mbps", "4.6 Mbps", "5 Mbps", "6 Mbps", "7 Mbps", "8 Mbps", "9 Mbps", "10 Mbps", "15 Mbps", "20 Mbps", "30 Mbps", "40 Mbps", "45 Mbps", "50 Mbps", "80 Mbps", "100 Mbps", "150 Mbps", "155 Mbps", "200 Mbps", "300 Mbps", "400 Mbps", "500 Mbps", "600 Mbps", "622 Mbps", "800 Mbps", "1 Gbps", "1.5 Gbps", "2 Gbps", "2.5 Gbps", "5 Gbps", "8 Gbps", "10 Gbps"],
+				"cpeBillingMethod":["Monthly Recurring Plan (MRP)","Customer Provided","Direct Lease","Purchase"],
+				"terms":["12","24","36","48","60"]
+			}
+		},
+		"rrr": {
+			"code": "PR_PRO_SERVICES_RRR",
+			"title": "Rapid Response Retainer",
+			"saleEnable":"Y",
+			"techEnable":"Y",
+			"generalDescription": ["Rapid Response Retainer customers benefit from:", ["Dedicated Investigative Liaison", "Choice of four assessments:", ["Incident Response Readiness Assessment", "Network Health Checks", "First Responders Training Course", "Executive Breach Simulation"]]],
+			"standardPackages": {
+				"PS_BASE": {
+					"title": "Basic",
+					"attributes": {
+						"Boots on Ground SLA": "48 Hours",
+						"Incident Escalation Hotline": "Yes",
+						"Reserve Hours": "100",
+						"Rate for Added Hours": "$400",
+						"Netflow Retention": "No"
+					}
+				},
+				"PS_ADVANCED": {
+					"title": "Advanced",
+					"attributes": {
+						"Boots on Ground SLA": "24 Hours",
+						"Incident Escalation Hotline": "Yes",
+						"Reserve Hours": "100",
+						"Rate for Added Hours": "$325",
+						"Netflow Retention": "No"
+					}
+				},
+				"PS_ADVANCED_PLUS": {
+					"title": "Advanced+",
+					"attributes": {
+						"Boots on Ground SLA": "24 Hours",
+						"Incident Escalation Hotline": "Yes",
+						"Reserve Hours": "100",
+						"Rate for Added Hours": "$325",
+						"Netflow Retention": "Yes"
+					}
+				}
+			},
+			"customAttributes": {
+				"terms":["12","24","36","48","60"]
+			}
+		},
+		"sci": {
+			"code": "PR_PIP_SVC_SCI",
+			"title": "Secure Cloud Interconnect",
+			"saleEnable":"Y",
+			"techEnable":"Y",
+            "isProductControlled":"TRUE",
+			"rtbProductCode":["PR_PIP_GAT"],
+			"generalDescription": "Secure Cloud Interconnect enables Verizon Private IP (Rapid Delivery) customers to connect to a global ecosystem of cloud providers and applications. Secure Cloud Interconnect allows for easy provisioning and integration of customer wide area networks (WAN) to cloud services using the Verizon Enterprise Center (VEC).",
+			"partners": {
+				"amazon": {
+					"name": "Amazon",
+					"locations": {
+						"l1": {
+							"location": "Frankfurt, Germany",
+							"locTransForUI": "Germany, Frankfurt",
+							"partnerServices": ["AWS Direct Connect - Ded VPC", "AWS Direct Connect - Ded Non VPC"],
+							"typeOfCloud": ["Virtual Private Cloud (VPC)", "Non VPC"]
+						},
+						"l2": {
+							"location": "New York, NY",
+							"locTransForUI": "NY, New York",
+							"partnerServices": ["AWS Direct Connect - Ded VPC", "AWS Direct Connect - Ded Non VPC"],
+							"typeOfCloud": ["Virtual Private Cloud (VPC)", "Non VPC"]
+						},
+						"l3": {
+							"location": "Southam",
+							"locTransForUI": "Southam sao paulo brazil",
+							"partnerServices": ["AWS Direct Connect - Ded VPC"],
+							"typeOfCloud": ["Virtual Private Cloud (VPC)"]
+						},
+						"l4": {
+							"location": "US East DC1",
+							"locTransForUI": "VA, Ashburn",
+							"partnerServices": ["AWS Direct Connect - Ded VPC", "AWS Direct Connect - Ded Non VPC"],
+							"typeOfCloud": ["Virtual Private Cloud (VPC)", "Non VPC"]
+						},
+						"l5": {
+							"location": "US West SV1",
+							"locTransForUI": "CA, San Francisco",
+							"partnerServices": ["AWS Direct Connect - Ded VPC", "AWS Direct Connect - Ded Non VPC"],
+							"typeOfCloud": ["Virtual Private Cloud (VPC)", "Non VPC"]
+						},
+						"l6": {
+							"location": "US-West (SuperNAP 8 Oregon)",
+							"locTransForUI": "NV, Las Vegas",
+							"partnerServices": ["AWS Direct Connect - Ded VPC", "AWS Direct Connect - Ded Non VPC"],
+							"typeOfCloud": ["Virtual Private Cloud (VPC)", "Non VPC"]
+						},
+						"l7": {
+							"location": "Los Angeles, CA",
+							"locTransForUI": "CA, Los Angeles",
+							"partnerServices": ["AWS Direct Connect - Ded VPC", "AWS Direct Connect - Ded Non VPC"],
+							"typeOfCloud": ["Virtual Private Cloud (VPC)", "Non VPC"]
+						},
+						"l8": {
+							"location": "AsiaPac-SG2",
+							"locTransForUI": "Singapore",
+							"partnerServices": ["AWS Direct Connect - Ded VPC", "AWS Direct Connect - Ded Non VPC"],
+							"typeOfCloud": ["Virtual Private Cloud (VPC)", "Non VPC"]
+						},
+						"l9": {
+							"location": "AsiaPac-SY3",
+							"locTransForUI": "Sydney",
+							"partnerServices": ["AWS Direct Connect - Ded VPC", "AWS Direct Connect - Ded Non VPC"],
+							"typeOfCloud": ["Virtual Private Cloud (VPC)", "Non VPC"]
+						},
+						"l10": {
+							"location": "AsiaPac-TY2",
+							"locTransForUI": "Tokyo",
+							"partnerServices": ["AWS Direct Connect - Ded VPC", "AWS Direct Connect - Ded Non VPC"],
+							"typeOfCloud": ["Virtual Private Cloud (VPC)", "Non VPC"]
+						},
+						"l11": {
+							"location": "EU West London",
+							"locTransForUI": "EU West London",
+							"partnerServices": ["AWS Direct Connect - Ded VPC", "AWS Direct Connect - Ded Non VPC"],
+							"typeOfCloud": ["Virtual Private Cloud (VPC)", "Non VPC"]
+						}
+					}
+				},
+				"broadsoft": {
+					"name": "Broadsoft",
+					"locations": {
+						"l1": {
+							"location": "VCE US-Central",
+							"locTransForUI": "US-Central, VCE",
+							"partnerServices": ["Virtual Communication Express"],
+							"typeOfCloud": ["Virtual Private Cloud (VPC)"]
+						}
+					}
+				},
+				"google": {
+					"name": "Google",
+					"locations": {
+						"l1": {
+							"location": "AP-West",
+							"locTransForUI": "AP-West",
+							"partnerServices": ["Google Cloud Platform"],
+							"typeOfCloud": ["Shared"]
+						},
+						"l2": {
+							"location": "EU-West",
+							"locTransForUI": "Belgium, EU-West",
+							"partnerServices": ["Google Cloud Platform"],
+							"typeOfCloud": ["Shared"]
+						},
+						"l3": {
+							"location": "US-Central",
+							"locTransForUI": "Iowa, US-Central",
+							"partnerServices": ["Google Cloud Platform"],
+							"typeOfCloud": ["Shared"]
+						}
+					}
+				},
+				"hp": {
+					"name": "HP",
+					"locations": {
+						"l1": {
+							"location": "Atlanta",
+							"locTransForUI": "GA, Atlanta",
+							"partnerServices": ["HP Managed Helion Cloud Services"],
+							"typeOfCloud": ["Virtual Private Cloud (VPC)"]
+						},
+						"l2": {
+							"location": "Russelsheim, Germany",
+							"locTransForUI": "Germany, Russelsheim",
+							"partnerServices": ["HP Managed Helion Cloud Services"],
+							"typeOfCloud": ["Virtual Private Cloud (VPC)"]
+						},
+						"l3": {
+							"location": "Singapore",
+							"locTransForUI": "Singapore",
+							"partnerServices": ["HP Managed Helion Cloud Services"],
+							"typeOfCloud": ["Virtual Private Cloud (VPC)"]
+						},
+						"l4": {
+							"location": "Sydney, Australia",
+							"locTransForUI": "Australia, Sydney",
+							"partnerServices": ["HP Managed Helion Cloud Services"],
+							"typeOfCloud": ["Virtual Private Cloud (VPC)"]
+						}
+					}
+				},
+				"ibm": {
+					"name": "IBM",
+					"locations": {
+						"l1": {
+							"location": "Ashburn, VA",
+							"locTransForUI": "VA, Ashburn",
+							"partnerServices": ["Softlayer", "Softlayer - Public"],
+							"typeOfCloud": ["Virtual Private Cloud (VPC)", "non-VPC"]
+						},
+						"l2": {
+							"location": "AsiaPac-SY3",
+							"locTransForUI": "Australia, Sydney",
+							"partnerServices": ["Softlayer", "Softlayer - Public"],
+							"typeOfCloud": ["Virtual Private Cloud (VPC)", "Non VPC"]
+						},
+						"l3": {
+							"location": "Dallas, TX",
+							"locTransForUI": "TX, Dallas",
+							"partnerServices": ["Softlayer", "Softlayer - Public"],
+							"typeOfCloud": ["Virtual Private Cloud (VPC)", "Non VPC"]
+						},
+						"l4": {
+							"location": "San Jose, CA",
+							"locTransForUI": "CA, San Jose",
+							"partnerServices": ["Softlayer", "Softlayer - Public"],
+							"typeOfCloud": ["Virtual Private Cloud (VPC)", "non-VPC"]
+						},
+						"l5": {
+							"location": "Tokyo",
+							"locTransForUI": "Japan, Tokyo",
+							"partnerServices": ["Softlayer", "Softlayer - Public"],
+							"typeOfCloud": ["Virtual Private Cloud (VPC)", "non-VPC"]
+						}
+					}
+				},
+				"microsoft": {
+					"name": "Microsoft",
+					"locations": {
+						"l1": {
+							"location": "Amsterdam, Holland",
+							"locTransForUI": "Netherlands, Amsterdam",
+							"partnerServices": ["Azure - Dedicated VPC", "Azure - Dedicated Non-VPC", "Office 365"],
+							"typeOfCloud": ["Dedicated VPC", "Dedicated Non-VPC", "Dedicated Non-VPC"]
+						},
+						"l2": {
+							"location": "Ashburn (GOV)",
+							"locTransForUI": "GOV, Ashburn",
+							"partnerServices": ["AzureGov - Dedicated VPC", "AzureGov - Dedicated Non-VPC"],
+							"typeOfCloud": ["Dedicated VPC", "Dedicated Non-VPC"]
+						},
+						"l3": {
+							"location": "Ashburn, VA",
+							"locTransForUI": "VA, Ashburn",
+							"partnerServices": ["Azure - Dedicated VPC", "Azure - Dedicated Non-VPC", "Office 365"],
+							"typeOfCloud": ["Dedicated VPC", "Dedicated Non-VPC", "Dedicated Non-VPC"]
+						},
+						"l4": {
+							"location": "Hong Kong, China",
+							"locTransForUI": "Hong Kong, China",
+							"partnerServices": ["Azure - Dedicated VPC", "Azure - Dedicated Non-VPC", "Office 365"],
+							"typeOfCloud": ["Dedicated VPC", "Dedicated Non-VPC", "Dedicated Non-VPC"]
+						},
+						"l5": {
+							"location": "London, England",
+							"locTransForUI": "England, London",
+							"partnerServices": ["Azure - Dedicated VPC", "Azure - Dedicated Non-VPC", "Office 365"],
+							"typeOfCloud": ["Dedicated VPC", "Dedicated Non-VPC", "Dedicated Non-VPC"]
+						},
+						"l6": {
+							"location": "San Jose, CA",
+							"locTransForUI": "CA, San Jose",
+							"partnerServices": ["Azure - Dedicated VPC", "Azure - Dedicated Non-VPC", "Office 365"],
+							"typeOfCloud": ["Dedicated VPC", "Dedicated Non-VPC", "Dedicated Non-VPC"]
+						},
+						"l7": {
+							"location": "Sydney",
+							"locTransForUI": "Australia, Sydney",
+							"partnerServices": ["Azure - Dedicated VPC", "Azure - Dedicated Non-VPC", "Office 365"],
+							"typeOfCloud": ["Dedicated VPC", "Dedicated Non-VPC", "Dedicated Non-VPC"]
+						},
+						"l8": {
+							"location": "Chicago (GOV)",
+							"locTransForUI": "GOV, Chicago",
+							"partnerServices": ["AzureGov - Dedicated VPC", "AzureGov - Dedicated Non-VPC"],
+							"typeOfCloud": ["Dedicated VPC", "Dedicated Non-VPC"]
+						}
+					}
+				},
+				"salesforce": {
+					"name": "Salesforce",
+					"locations": {
+						"l1": {
+							"location": "Ashburn, VA",
+							"locTransForUI": "VA, Ashburn",
+							"partnerServices": ["Salesforce"],
+							"typeOfCloud": ["Shared"]
+						},
+						"l2": {
+							"location": "Chicago, IL USA",
+							"locTransForUI": "IL, Chicago",
+							"partnerServices": ["Salesforce"],
+							"typeOfCloud": ["Shared"]
+						},
+						"l3": {
+							"location": "San Jose, CA",
+							"locTransForUI": "CA, San Jose",
+							"partnerServices": ["Salesforce"],
+							"typeOfCloud": ["Shared"]
+						},
+						"l4": {
+							"location": "Yokohama, Japan",
+							"locTransForUI": "Japan, Yokohama",
+							"partnerServices": ["Salesforce"],
+							"typeOfCloud": ["Shared"]
+						}
+					}
+				},
+				"terremark": {
+					"name": "Terremark",
+					"locations": {
+						"l1": {
+							"location": "Amsterdam, Holland",
+							"locTransForUI": "Holland, Amsterdam",
+							"partnerServices": ["Verizon Cloud", "Verizon Cloud Storage", "Verizon Managed Hosting"],
+							"typeOfCloud": ["Virtual Private Cloud (VPC)", "non-VPC", "Virtual Private Cloud (VPC)"]
+						},
+						"l2": {
+							"location": "Culpepper, VA",
+							"locTransForUI": "VA, Culpepper",
+							"partnerServices": ["Verizon Cloud", "Verizon Cloud Storage", "Verizon Managed Hosting"],
+							"typeOfCloud": ["Virtual Private Cloud (VPC)", "non-VPC", "Virtual Private Cloud (VPC)"]
+						},
+						"l3": {
+							"location": "Englewood, CO",
+							"locTransForUI": "CO, Englewood",
+							"partnerServices": ["Verizon Cloud", "Verizon Cloud Storage"],
+							"typeOfCloud": ["Virtual Private Cloud (VPC)", "non-VPC"]
+						},
+						"l4": {
+							"location": "Hong Kong",
+							"locTransForUI": "China, Hong Kong",
+							"partnerServices": ["Verizon Cloud"],
+							"typeOfCloud": ["Virtual Private Cloud (VPC)"]
+						},
+						"l5": {
+							"location": "London, England",
+							"locTransForUI": "England, London",
+							"partnerServices": ["Verizon Cloud", "Verizon Cloud Storage"],
+							"typeOfCloud": ["Virtual Private Cloud (VPC)", "non-VPC"]
+						},
+						"l6": {
+							"location": "Melbourne, Australia",
+							"locTransForUI": "Australia, Melbourne",
+							"partnerServices": ["Verizon Cloud"],
+							"typeOfCloud": ["Virtual Private Cloud (VPC)"]
+						},
+						"l7": {
+							"location": "Miami, FL",
+							"locTransForUI": "FL, Miami",
+							"partnerServices": ["Verizon Cloud", "Verizon Managed Hosting"],
+							"typeOfCloud": ["Virtual Private Cloud (VPC)", "Virtual Private Cloud (VPC)"]
+						},
+						"l8": {
+							"location": "Santa Clara, CA",
+							"locTransForUI": "CA, Santa Clara",
+							"partnerServices": ["Verizon Cloud", "Verizon Cloud Storage", "Verizon Managed Hosting"],
+							"typeOfCloud": ["Virtual Private Cloud (VPC)", "non-VPC", "Virtual Private Cloud (VPC)"]
+						},
+						"l9": {
+							"location": "Southam",
+							"locTransForUI": "Brazil, Sao Paulo",
+							"partnerServices": ["Verizon Cloud", "Verizon Managed Hosting"],
+							"typeOfCloud": ["Virtual Private Cloud (VPC)", "Virtual Private Cloud (VPC)"]
+						}
+					}
+				},
+				"verizon": {
+					"name": "Verizon",
+					"locations": {
+						"l1": {
+							"location": "US-East",
+							"locTransForUI": "US-East",
+							"partnerServices": ["Mobile Workforce Manager"],
+							"typeOfCloud": ["Shared"]
+						}
+					}
+				}
+			},
+			"bandwidth": {
+				"enum": ["Usage", "Unlimited", "Data Plan"]
+			},
+			"dataPlans": [{
+				"gb": "Usage",
+				"mrc": "$0.00",
+				"nrc": "$1500.00",
+				"overage": "$2.00",
+				"color": "#8cc152"
+			}, {
+				"gb": "1000",
+				"mrc": "$1000.00",
+				"nrc": "$0.00",
+				"overage": "$1.00",
+				"color": "#8cc152"
+			}, {
+				"gb": "3000",
+				"mrc": "$2200.00",
+				"nrc": "$0.00",
+				"overage": "$0.73",
+				"color": "#8cc152"
+			}, {
+				"gb": "10000",
+				"mrc": "$4000.00",
+				"nrc": "$0.00",
+				"overage": "$0.40",
+				"color": "#8cc152"
+			}, {
+				"gb": "30000",
+				"mrc": "$9667.00",
+				"nrc": "$0.00",
+				"overage": "$0.32",
+				"color": "#ffb74d"
+			}, {
+				"gb": "45000",
+				"mrc": "$11333.00",
+				"nrc": "$0.00",
+				"overage": "$0.25",
+				"color": "#ffb74d"
+			}, {
+				"gb": "100000",
+				"mrc": "$15000.00",
+				"nrc": "$0.00",
+				"overage": "$0.15",
+				"color": "#ffb74d"
+			}, {
+				"gb": "150000",
+				"mrc": "$22500.00",
+				"nrc": "$0.00",
+				"overage": "$0.15",
+				"color": "#e84528"
+			}, {
+				"gb": "Unlimited",
+				"mrc": "$30000.00",
+				"nrc": "$0.00",
+				"overage": "N/A",
+				"color": "#e84528"
+			}],
+			"comments": "someComments",
+			"quoteSummaryDetails": {
+				"title": "Secure Cloud Interconnect Quote Summary",
+				"packageDetails": {
+					"Service Commitment": "12 Months"
+				},
+				"pricingDetails": {
+					"title": "<p><strong>Secure Cloud Interconnect</strong></p>",
+					"line1": "partnerSelected"
+				},
+				"quantity": {
+					"line1": "1"
+				},
+				"mrcPricing": {
+					"line1": "monthlyRecurringCharge"
+				},
+				"nrcPricing": {
+					"line1": "nonRecurringCharge"
+				},
+				"footerSection": {
+					"f1": "1. A usage charge of USD x.xx per GB will apply each billing period in which Customer's Measured Use Level exceeds Customer's Bandwidth commitment"
+				}
+			},
+			"LocationCoord": {
+				"amazon": {
+					"l1": {
+						"coordinate": {
+							"left": "48.29%",
+							"top": "37.16%"
+						}
+					},
+					"l2": {
+						"coordinate": {
+							"left": "28.67%",
+							"top": "39.69%"
+						}
+					},
+					"l3": {
+						"coordinate": {
+							 "left": "35.01%",
+							 "top": "72.30%"
+						}
+					},
+					"l4": {
+						"coordinate": {
+							"left": "25.86%",
+							"top": "42.40%"
+						}
+					},
+					"l5": {
+						"coordinate": {
+							"left": "15.69%",
+							"top": "42.40%"
+						}
+					},
+					"l6": {
+						"coordinate": {
+							"left": "17.71%",
+							"top": "44.76%"
+						}
+					},
+					"l7": {
+						"coordinate": {
+							"left": "16.60%",
+							"top": "45.95%"
+						}
+					},
+					"l8": {
+						"coordinate": {
+							"left": "73.44%",
+							"top": "58.62%"
+						}
+					},
+					"l9": {
+						"coordinate": {
+							"left": "85.72%",
+							"top": "77.70%"
+						}
+					},
+					"l10": {
+						"coordinate": {
+							"left": "83.10%",
+							"top": "43.93%"
+						}
+					},
+					"l11": {
+						"coordinate": {
+							"left": "45.78%",
+							"top": "36.16%"
+						}
+					}
+				},
+				"broadsoft": {
+					"l1": {
+						"coordinate": {
+							"left": "21.63%",
+							"top": "42.40%"
+						}
+					}
+				},
+				"google": {
+					"l1": {
+						"coordinate": {
+							"left": "75.96%",
+							"top": "43.92%"
+						}
+					},
+					"l2": {
+						"coordinate": {
+							"left": "47.38%",
+							"top": "36.82%"
+						}
+					},
+					"l3": {
+						"coordinate": {
+							"left": "22.94%",
+							"top": "40.54%"
+						}
+					}
+				},
+				"hp": {
+					"l1": {
+						"coordinate": {
+							"left": "24.95%",
+							"top": "44.09%"
+						}
+					},
+					"l2": {
+						"coordinate": {
+							"left": "48.59%",
+							"top": "37.26%"
+						}
+					},
+					"l3": {
+						"coordinate": {
+							"left": "73.94%",
+							"top": "59.12%"
+						}
+					},
+					"l4": {
+						"coordinate": {
+							"left": "86.22%",
+							"top": "77.70%"
+						}
+					}
+				},
+				"ibm": {
+					"l1": {
+						"coordinate": {
+							"left": "27.57%",
+							"top": "42.40%"
+						}
+					},
+					"l2": {
+						"coordinate": {
+							"left": "87.93%",
+							"top": "77.70%"
+						}
+					},
+					"l3": {
+						"coordinate": {
+							"left": "20.82%",
+							"top": "43.92%"
+						}
+					},
+					"l4": {
+						"coordinate": {
+							"left": "16.70%",
+							"top": "44.09%"
+						}
+					},
+					"l5": {
+						"coordinate": {
+							"left": "83.10%",
+							"top": "44.43%"
+						}
+					}
+				},
+				"microsoft": {
+					"l1": {
+						"coordinate": {
+							"left": "47.89%",
+							"top": "34.80%"
+						}
+					},
+					"l2": {
+						"coordinate": {
+							"left": "25.3%",
+							"top": "41.39%"
+						}
+					},
+					"l3": {
+						"coordinate": {
+							"left": "24.14%",
+							"top": "41.39%"
+						}
+					},
+					"l4": {
+						"coordinate": {
+							"left": "77.97%",
+							"top": "49.83%"
+						}
+					},
+					"l5": {
+						"coordinate": {
+							"left": "46.28%",
+							"top": "36.66%"
+						}
+					},
+					"l6": {
+						"coordinate": {
+							"left": "15.79%",
+							"top": "44.26%"
+						}
+					},
+					"l7": {
+						"coordinate": {
+							"left": "84.71%",
+							"top": "82.61%"
+						}
+					},
+					"l8": {
+						"coordinate": {
+							"left": "22.84%",
+							"top": "38.85%"
+						}
+					},
+					"l8": {
+						"coordinate": {
+							"left": "22.84%",
+							"top": "38.85%"
+						}
+					}
+				},
+				"salesforce": {
+					"l1": {
+						"coordinate": {
+							"left": "26.86%",
+							"top": "43.24%"
+						}
+					},
+					"l2": {
+						"coordinate": {
+							"left": "21.63%",
+							"top": "38.85%"
+						}
+					},
+					"l3": {
+						"coordinate": {
+							"left": "16.80%",
+							"top": "45.95%"
+						}
+					},
+					"l4": {
+						"coordinate": {
+							"left": "83.60%",
+							"top": "43.92%"
+						}
+					}
+				},
+				"terremark": {
+					"l1": {
+						"coordinate": {
+							"left": "49.28%",
+							"top": "36.14%"
+						}
+					},
+					"l2": {
+						"coordinate": {
+							"left": "24.85%",
+							"top": "42.40%"
+						}
+					},
+					"l3": {
+						"coordinate": {
+							"left": "18.71%",
+							"top": "40.88%"
+						}
+					},
+					"l4": {
+						"coordinate": {
+							"left": "76.46%",
+							"top": "49.83%"
+						}
+					},
+					"l5": {
+						"coordinate": {
+							"left": "47.28%",
+							"top": "35.81%"
+						}
+					},
+					"l6": {
+						"coordinate": {
+							"left": "85.11%",
+							"top": "79.90%"
+						}
+					},
+					"l7": {
+						"coordinate": {
+							"left": "25.65%",
+							"top": "47.13%"
+						}
+					},
+					"l8": {
+						"coordinate": {
+							"left": "15.70%",
+							"top": "41.39%"
+						}
+					},
+					"l9": {
+						"coordinate": {
+							"left": "33.50%",
+							"top": "72.30%"
+						}
+					}
+				},
+				"verizon": {
+					"l1": {
+						"coordinate": {
+							"left": "21.23%",
+							"top": "40.72%"
+						}
+					}
+				}
+			},
+            "customAttributes": {
+				"terms":["24"]
+			}
+		},
+		"sdp": {
+			"code": "PR_VER_SDP",
+			"title": "Software Defined Perimeter",
+			"saleEnable":"Y",
+			"techEnable":"Y",
+			"customType":"Sdp",
+			"isProductControlled":"TRUE",
+			"rtbProductCode":["PR_VER_SDP"],
+			"preselectorOption":["amazon","microsoft","verizon"],
+			"preselectorOptionRelationShip":{
+				"amazon": ["SDP_SMALL_AZ","SDP_MEDIUM_AZ","SDP_LARGE_AZ"],
+				"microsoft": ["SDP_SMALL_MS","SDP_MEDIUM_MS", "SDP_LARGE_MS"],
+				"verizon": ["SDP_SMALL_VZ","SDP_MEDIUM_VZ","SDP_LARGE_VZ"]
+			},
+			"preselectorTitle":"Select Partner",
+			"generalDescription": "The Software Defined Perimeter (SDP) is a new approach to security that creates dynamically provisioned, “virtually air-gapped networks” anywhere in the world. An air-gapped network is one that is completely isolated from all unsecured networks, and which, therefore, mitigates network-based attacks. ",
+			"standardPackages": {
+				"SDP_SMALL_AZ": {
+					"title": "Small",
+					"attributes": {
+                        "Cloud Partner": "Amazon AWS",
+                        "End Points": "100",
+                        "SDP Controller": "1",
+                        "SDP Gateways": "2"
+                    }
+				},
+				"SDP_MEDIUM_AZ": {
+					"title": "Medium",
+					"attributes": {
+                        "Cloud Partner": "Amazon AWS",
+                        "End Points": "500",
+                        "SDP Controller": "2",
+                        "SDP Gateways": "2"
+                    }
+				},
+				"SDP_LARGE_AZ": {
+					"title": "Large",
+					"attributes": {
+                        "Cloud Partner": "Amazon AWS",
+                        "End Points": "1000",
+                        "SDP Controller": "2",
+                        "SDP Gateways": "4"
+                    }
+				},
+				"SDP_SMALL_MS": {
+					"title": "Small",
+					"attributes": {
+                        "Cloud Partner": "Microsoft Azure",
+                        "End Points": "100",
+                        "SDP Controller": "1",
+                        "SDP Gateways": "2"
+                    }
+				},
+				"SDP_MEDIUM_MS": {
+					"title": "Medium",
+					"attributes": {
+                        "Cloud Partner": "Microsoft Azure",
+                        "End Points": "500",
+                        "SDP Controller": "2",
+                        "SDP Gateways": "2"
+                    }
+				},
+				"SDP_LARGE_MS": {
+					"title": "Large",
+					"attributes": {
+                        "Cloud Partner": "Microsoft Azure",
+                        "End Points": "1000",
+                        "SDP Controller": "2",
+                        "SDP Gateways": "4"
+                    }
+				},
+                "SDP_SMALL_VZ": {
+					"title": "Small",
+					"attributes": {
+                        "Cloud Partner": "Verizon",
+                        "End Points": "100",
+                        "SDP Controller": "1",
+                        "SDP Gateways": "2"
+                    }
+				},
+				"SDP_MEDIUM_VZ": {
+					"title": "Medium",
+					"attributes": {
+                        "Cloud Partner": "Verizon",
+                        "End Points": "500",
+                        "SDP Controller": "2",
+                        "SDP Gateways": "2"
+                    }
+				},
+				"SDP_LARGE_VZ": {
+					"title": "Large",
+					"attributes": {
+                        "Cloud Partner": "Verizon",
+                        "End Points": "1000",
+                        "SDP Controller": "2",
+                        "SDP Gateways": "4"
+                    }
+				}
+			},
+			"customFields" : {
+				"serviceCommitments" : {
+					"0" : "12",
+					"1" : "24",
+					"2" : "36",
+					"3" : "48",
+					"4" : "60",
+					"5" : "72",
+					"6" : "84",
+					"7" : "96",
+					"8" : "108",
+					"9" : "120"
+				},
+
+                "SDP": {
+					"0": "Controller",
+					"1": "Gateway"
+
+				}
+			},
+			"customAttributes": {
+				"terms":["12","24","36","48","60"],
+                "requiredConfig": ["Partner", "Location"]
+			}
+		},
+		"srs": {
+			"code": "PR_CPE_SITEREADY",
+			"title": "Site Ready Services",
+			"saleEnable":"N",
+			"techEnable":"Y",
+			"generalDescription": ["Site Ready Services is a suite of products and services offered to prepare the customer's site(s) for additional network services, communications infrastructure, and CPE deployment.", "Guide customers in selecting the correct product / organization to perform wiring / cabling work."],
+			"standardPackages": {
+				"SS_UPTO_25": {
+					"title": "X-Small",
+					"attributes": {
+						"Conduit Length in feet": "25",
+						"Conduit Type": "1 1/4\" Smooth Wall Inner Duct",
+						"Backboard": "2x2\" Backboard 3/4\" Plywood",
+						"Project Integration - Coordination of Site Ready": "$117.99",
+						"Price (Material & Labor)": "$1,514.98"
+					}
+				},
+				"SS_UPTO_150": {
+					"title": "X-Medium",
+					"attributes": {
+						"Conduit Length in feet": "150",
+						"Conduit Type": "1 1/4\" Smooth Wall Inner Duct",
+						"Backboard": "2x2\" Backboard 3/4\" Plywood",
+						"Project Integration - Coordination of Site Ready": "$117.99",
+						"Price (Material & Labor)": "$1,811.39"
+					}
+				},
+				"SS_UPTO_400": {
+					"title": "X-Large",
+					"attributes": {
+						"Conduit Length in feet": "400",
+						"Conduit Type": "1 1/4\" Smooth Wall Inner Duct",
+						"Backboard": "2x2\" Backboard 3/4\" Plywood",
+						"Project Integration - Coordination of Site Ready": "$117.99",
+						"Price (Material & Labor)": "$3,458.11"
+					}
+				}
+			},
+			"customFields": {
+				"conduitType": {
+					"0": "No Conduit",
+					"1": "1 1/4\" Corrugated Inner Duct",
+					"2": "1 1/4\" Smooth Wall Inner Duct",
+					"3": "1 1/4\" Plenum Inner Duct",
+					"4": "1 1/4\" Metallic Conduit",
+					"5": "2\" Metallic Conduit",
+					"6": "2\" Plenum Inner Duct"
+				},
+				"backboard": {
+					"0": "No Backboard",
+					"1": "4X4 Backboard 3/4\" Plywood",
+					"2": "2X2 Backboard 3/4\" Plywood",
+					"3": "4X8 Backboard 3/4\" Plywood"
+				},
+				"aerialAnchoring": {
+					"0": "No Aerial Anchoring",
+					"1": "Building Attachment",
+					"2": "Mast"
+				},
+				"acPower": {
+					"0": "No AC Power",
+					"1": "NEMA L5-15R : 125 VAC 15 AMP 25FT",
+					"2": "NEMA L5-15R : 125 VAC 15 AMP 50FT",
+					"3": "NEMA L5-20R : 125 VAC 20 AMP 25FT",
+					"4": "NEMA L5-20R : 125 VAC 20 AMP 50FT",
+					"5": "NEMA L6-20R : 225 VAC 20 AMP 25FT",
+					"6": "NEMA L6-20R : 225 VAC 20 AMP 50FT",
+					"7": "NEMA L6-30R : 225 VAC 30 AMP 25FT",
+					"8": "NEMA L6-30R : 225 VAC 30 AMP 50FT",
+					"9": "3 PRONG DUPLEX 125 VAC 15 AMP 25FT DED",
+					"10": "3 PRONG DUPLEX 125 VAC 15 AMP 50FT DED",
+					"11": "3 PRONG DUPLEX 125 VAC 15 AMP 25FT NON-DED",
+					"12": "3 PRONG DUPLEX 125 VAC 15 AMP 50FT NON-DED"
+				}
+			},
+			"customPrices": {
+				"srsPathPriceList": [{
+					"threshold": 25,
+					"packageId": "SS_UPTO_25",
+					"tpvPrice": "$1,514.99",
+					"displayValue": "Includes installation of innerduct up to 25 feet with pull string, internal core drilling as needed, backboard, shelf, connectors & misc materials to extend circuit to designated location"
+				}, {
+					"threshold": 50,
+					"packageId": "SS_UPTO_50",
+					"tpvPrice": "$1,514.99",
+					"displayValue": "Includes installation of innerduct up to 50 feet with pull string, internal core drilling as needed, backboard, shelf, connectors & misc materials to extend circuit to designated location"
+				}, {
+					"threshold": 75,
+					"packageId": "SS_UPTO_75",
+					"tpvPrice": "$1,514.99",
+					"displayValue": "Includes installation of innerduct up to 75 feet with pull string, internal core drilling as needed, backboard, shelf, connectors & misc materials to extend circuit to designated location"
+				}, {
+					"threshold": 100,
+					"packageId": "SS_UPTO_100",
+					"tpvPrice": "$1,613.79",
+					"displayValue": "Includes installation of innerduct up to 100 feet with pull string, internal core drilling as needed, backboard, shelf, connectors & misc materials to extend circuit to designated location"
+				}, {
+					"threshold": 125,
+					"packageId": "SS_UPTO_125",
+					"tpvPrice": "$1,712.59",
+					"displayValue": "Includes installation of innerduct up to 125 feet with pull string, internal core drilling as needed, backboard, shelf, connectors & misc materials to extend circuit to designated location"
+				}, {
+					"threshold": 150,
+					"packageId": "SS_UPTO_150",
+					"tpvPrice": "$1,811.39",
+					"displayValue": "Includes installation of innerduct up to 150 feet with pull string, internal core drilling as needed, backboard, shelf, connectors & misc materials to extend circuit to designated location"
+				}, {
+					"threshold": 175,
+					"packageId": "SS_UPTO_175",
+					"tpvPrice": "$1,910.20",
+					"displayValue": "Includes installation of innerduct up to 175 feet with pull string, internal core drilling as needed, backboard, shelf, connectors & misc materials to extend circuit to designated location"
+				}, {
+					"threshold": 200,
+					"packageId": "SS_UPTO_200",
+					"tpvPrice": "$2,009.00",
+					"displayValue": "Includes installation of innerduct up to 200 feet with pull string, internal core drilling as needed, backboard, shelf, connectors & misc materials to extend circuit to designated location"
+				}, {
+					"threshold": 225,
+					"packageId": "SS_UPTO_225",
+					"tpvPrice": "$2,140.74",
+					"displayValue": "Includes installation of innerduct up to 225 feet with pull string, internal core drilling as needed, backboard, shelf, connectors & misc materials to extend circuit to designated location"
+				}, {
+					"threshold": 250,
+					"packageId": "SS_UPTO_250",
+					"tpvPrice": "$2,239.54",
+					"displayValue": "Includes installation of innerduct up to 250 feet with pull string, internal core drilling as needed, backboard, shelf, connectors & misc materials to extend circuit to designated location"
+				}, {
+					"threshold": 275,
+					"packageId": "SS_UPTO_275",
+					"tpvPrice": "$2,338.34",
+					"displayValue": "Includes installation of innerduct up to 275 feet with pull string, internal core drilling as needed, backboard, shelf, connectors & misc materials to extend circuit to designated location"
+				}, {
+					"threshold": 300,
+					"packageId": "SS_UPTO_300",
+					"tpvPrice": "$2,437.15",
+					"displayValue": "Includes installation of innerduct up to 300 feet with pull string, internal core drilling as needed, backboard, shelf, connectors & misc materials to extend circuit to designated location"
+				}, {
+					"threshold": 325,
+					"packageId": "SS_UPTO_325",
+					"tpvPrice": "$2,931.16",
+					"displayValue": "Includes installation of innerduct up to 325 feet with pull string, internal core drilling as needed, backboard, shelf, connectors & misc materials to extend circuit to designated location"
+				}, {
+					"threshold": 350,
+					"packageId": "SS_UPTO_350",
+					"tpvPrice": "$3,062.90",
+					"displayValue": "Includes installation of innerduct up to 350 feet with pull string, internal core drilling as needed, backboard, shelf, connectors & misc materials to extend circuit to designated location"
+				}, {
+					"threshold": 375,
+					"packageId": "SS_UPTO_375",
+					"tpvPrice": "$3,359.31",
+					"displayValue": "Includes installation of innerduct up to 375 feet with pull string, internal core drilling as needed, backboard, shelf, connectors & misc materials to extend circuit to designated location"
+				}, {
+					"threshold": 400,
+					"packageId": "SS_UPTO_400",
+					"tpvPrice": "$3,458.11",
+					"displayValue": "Includes installation of innerduct up to 400 feet with pull string, internal core drilling as needed, backboard, shelf, connectors & misc materials to extend circuit to designated location"
+				}, {
+					"threshold": 425,
+					"packageId": "SS_UPTO_425",
+					"tpvPrice": "$3,774.28",
+					"displayValue": "Includes installation of innerduct up to 425 feet with pull string, internal core drilling as needed, backboard, shelf, connectors & misc materials to extend circuit to designated location"
+				}, {
+					"threshold": 450,
+					"packageId": "SS_UPTO_450",
+					"tpvPrice": "$3,873.09",
+					"displayValue": "Includes installation of innerduct up to 450 feet with pull string, internal core drilling as needed, backboard, shelf, connectors & misc materials to extend circuit to designated location"
+				}, {
+					"threshold": 475,
+					"packageId": "SS_UPTO_475",
+					"tpvPrice": "$3,971.89",
+					"displayValue": "Includes installation of innerduct up to 475 feet with pull string, internal core drilling as needed, backboard, shelf, connectors & misc materials to extend circuit to designated location"
+				}, {
+					"threshold": 500,
+					"packageId": "SS_UPTO_500",
+					"tpvPrice": "$3,533.20",
+					"displayValue": "Includes installation of innerduct up to 500 feet with pull string, internal core drilling as needed, backboard, shelf, connectors & misc materials to extend circuit to designated location"
+				}, {
+					"threshold": 600,
+					"packageId": "SS_UPTO_600",
+					"tpvPrice": "$4,492.25",
+					"displayValue": "Includes installation of innerduct up to 600 feet with pull string, internal core drilling as needed, backboard, shelf, connectors & misc materials to extend circuit to designated location"
+				}, {
+					"threshold": 700,
+					"packageId": "SS_UPTO_700",
+					"tpvPrice": "$4,887.46",
+					"displayValue": "Includes installation of innerduct up to 700 feet with pull string, internal core drilling as needed, backboard, shelf, connectors & misc materials to extend circuit to designated location"
+				}, {
+					"threshold": 800,
+					"packageId": "SS_UPTO_800",
+					"tpvPrice": "$5,467.11",
+					"displayValue": "Includes installation of innerduct up to 800 feet with pull string, internal core drilling as needed, backboard, shelf, connectors & misc materials to extend circuit to designated location"
+				}, {
+					"threshold": 900,
+					"packageId": "SS_UPTO_900",
+					"tpvPrice": "$6,059.93",
+					"displayValue": "Includes installation of innerduct up to 900 feet with pull string, internal core drilling as needed, backboard, shelf, connectors & misc materials to extend circuit to designated location"
+				}, {
+					"threshold": 1000,
+					"packageId": "SS_UPTO_1000",
+					"tpvPrice": "$6,455.14",
+					"displayValue": "Includes installation of innerduct up to 1000 feet with pull string, internal core drilling as needed, backboard, shelf, connectors & misc materials to extend circuit to designated location"
+				}, {
+					"threshold": 1100,
+					"packageId": "SS_UPTO_1100",
+					"tpvPrice": "$8,614.98",
+					"displayValue": "Includes installation of innerduct up to 1100 feet with pull string, internal core drilling as needed, backboard, shelf, connectors & misc materials to extend circuit to designated location"
+				}, {
+					"threshold": 1200,
+					"packageId": "SS_UPTO_1200",
+					"tpvPrice": "$9,037.19",
+					"displayValue": "Includes installation of innerduct up to 1200 feet with pull string, internal core drilling as needed, backboard, shelf, connectors & misc materials to extend circuit to designated location"
+				}, {
+					"threshold": 1300,
+					"packageId": "SS_UPTO_1300",
+					"tpvPrice": "$9,432.40",
+					"displayValue": "Includes installation of innerduct up to 1300 feet with pull string, internal core drilling as needed, backboard, shelf, connectors & misc materials to extend circuit to designated location"
+				}, {
+					"threshold": 1400,
+					"packageId": "SS_UPTO_1400",
+					"tpvPrice": "$10,104.26",
+					"displayValue": "Includes installation of innerduct up to 1400 feet with pull string, internal core drilling as needed, backboard, shelf, connectors & misc materials to extend circuit to designated location"
+				}, {
+					"threshold": 1500,
+					"packageId": "SS_UPTO_1500",
+					"tpvPrice": "$10,499.48",
+					"displayValue": "Includes installation of innerduct up to 1500 feet with pull string, internal core drilling as needed, backboard, shelf, connectors & misc materials to extend circuit to designated location"
+				}],
+				"srsAerialPriceListWithPI": [{
+					"packageId": "SS_AA_BA",
+					"tpvPrice": "$1,646.73",
+					"displayValue": "Secure Verizon provided building attachment to structure and provide 1\" or 2\" entrance hole to include core drill, sleeve, junction box on the exterior, and eye bolt if needed"
+				}, {
+					"packageId": "SS_AA_MA",
+					"tpvPrice": "$1,646.73",
+					"displayValue": "Installation of 2\" mast with weather-head. Includes 1\" or 2\" entrance hole to include core drill, sleeve, junction box on the exterior if needed"
+				}],
+				"srsAerialPriceListWithoutPI": [{
+					"packageId": "SS_AA_BA_X",
+					"tpvPrice": "$1,646.73",
+					"displayValue": "Secure Verizon provided building attachment to structure and provide 1\" or 2\" entrance hole to include core drill, sleeve, junction box on the exterior, and eye bolt if needed"
+				}, {
+					"packageId": "SS_AA_MA_X",
+					"tpvPrice": "$1,646.73",
+					"displayValue": "Installation of 2\" mast with weather-head. Includes 1\" or 2\" entrance hole to include core drill, sleeve, junction box on the exterior if needed"
+				}],
+				"srsACPriceListWithPI": [{
+					"packageId": "SS_AC_L5_15_25",
+					"tpvPrice": "$757.49",
+					"displayValue": "Includes installation of one NEMA L5-15R : 125 VAC 15 AMP outlet receptacle up to 25' run back to fuse panel dedicated with breaker"
+				}, {
+					"packageId": "SS_AC_L5_15_50",
+					"tpvPrice": "$988.04",
+					"displayValue": "Includes installation of one NEMA L5-15R : 125 VAC 15 AMP outlet receptacle up to 50' run back to fuse panel dedicated with breaker"
+				}, {
+					"packageId": "SS_AC_L5_20_25",
+					"tpvPrice": "$823.36",
+					"displayValue": "Includes installation of one NEMA L5-20R : 125 VAC 20 AMP outlet receptacle up to 25' run back to fuse panel dedicated with breaker"
+				}, {
+					"packageId": "SS_AC_L5_20_50",
+					"tpvPrice": "$1,053.90",
+					"displayValue": "Includes installation of one NEMA L5-20R : 125 VAC 20 AMP outlet receptacle up to 50' run back to fuse panel dedicated with breaker"
+				}, {
+					"packageId": "SS_AC_L6_20_25",
+					"tpvPrice": "$922.16",
+					"displayValue": "Includes installation of one NEMA L6-20R : 225 VAC 20 AMP outlet receptacle up to 25' run back to fuse panel dedicated with breaker"
+				}, {
+					"packageId": "SS_AC_L6_20_50",
+					"tpvPrice": "$1,152.70",
+					"displayValue": "Includes installation of one NEMA L6-20R : 225 VAC 20 AMP outlet receptacle up to 50' run back to fuse panel dedicated with breaker"
+				}, {
+					"packageId": "SS_AC_L6_30_25",
+					"tpvPrice": "$1,086.84",
+					"displayValue": "Includes installation of one NEMA L6-30R : 225 VAC 20 AMP outlet receptacle up to 25' run back to fuse panel dedicated with breaker"
+				}, {
+					"packageId": "SS_AC_L6_30_50",
+					"tpvPrice": "$1,251.51",
+					"displayValue": "Includes installation of one NEMA L6-30R : 225 VAC 30 AMP outlet receptacle up to 50' run back to fuse panel dedicated with breaker"
+				}, {
+					"packageId": "SS_DP_15_25_DED",
+					"tpvPrice": "$856.30",
+					"displayValue": "Includes installation of one 3 PRONG DUPLEX 125 VAC 15 AMP outlet receptacle up to 25' run back to fuse panel with dedicated breaker"
+				}, {
+					"packageId": "SS_DP_15_50_DED",
+					"tpvPrice": "$1,053.90",
+					"displayValue": "Includes installation of one 3 PRONG DUPLEX 125 VAC 15 AMP outlet receptacle up to 50' run back to fuse panel with dedicated breaker"
+				}, {
+					"packageId": "SS_DP_15_25_NDED",
+					"tpvPrice": "$671.86",
+					"displayValue": "Includes installation of one 3 PRONG DUPLEX 125 VAC 15 AMP outlet receptacle up to 25' run back to fuse panel with non-dedicated breaker"
+				}, {
+					"packageId": "SS_DP_15_50_NDED",
+					"tpvPrice": "$902.40",
+					"displayValue": "Includes installation of one 3 PRONG DUPLEX 125 VAC 15 AMP outlet receptacle up to 50' run back to fuse panel with non-dedicated breaker"
+				}],
+				"srsACPriceListWithoutPI": [{
+					"packageId": "SS_AC_L5_15_25_X",
+					"tpvPrice": "$757.49",
+					"displayValue": "Includes installation of one NEMA L5-15R : 125 VAC 15 AMP outlet receptacle up to 25' run back to fuse panel dedicated with breaker"
+				}, {
+					"packageId": "SS_AC_L5_15_50_X",
+					"tpvPrice": "$988.04",
+					"displayValue": "Includes installation of one NEMA L5-15R : 125 VAC 15 AMP outlet receptacle up to 50' run back to fuse panel dedicated with breaker"
+				}, {
+					"packageId": "SS_AC_L5_20_25_X",
+					"tpvPrice": "$823.36",
+					"displayValue": "Includes installation of one NEMA L5-20R : 125 VAC 20 AMP outlet receptacle up to 25' run back to fuse panel dedicated with breaker"
+				}, {
+					"packageId": "SS_AC_L5_20_50_X",
+					"tpvPrice": "$1,053.90",
+					"displayValue": "Includes installation of one NEMA L5-20R : 125 VAC 20 AMP outlet receptacle up to 50' run back to fuse panel dedicated with breaker"
+				}, {
+					"packageId": "SS_AC_L6_20_25_X",
+					"tpvPrice": "$922.16",
+					"displayValue": "Includes installation of one NEMA L6-20R : 225 VAC 20 AMP outlet receptacle up to 25' run back to fuse panel dedicated with breaker"
+				}, {
+					"packageId": "SS_AC_L6_20_50_X",
+					"tpvPrice": "$1,152.70",
+					"displayValue": "Includes installation of one NEMA L6-20R : 225 VAC 20 AMP outlet receptacle up to 50' run back to fuse panel dedicated with breaker"
+				}, {
+					"packageId": "SS_AC_L6_30_25_X",
+					"tpvPrice": "$1,086.84",
+					"displayValue": "Includes installation of one NEMA L6-30R : 225 VAC 20 AMP outlet receptacle up to 25' run back to fuse panel dedicated with breaker"
+				}, {
+					"packageId": "SS_AC_L6_30_50_X",
+					"tpvPrice": "$1,251.51",
+					"displayValue": "Includes installation of one NEMA L6-30R : 225 VAC 30 AMP outlet receptacle up to 50' run back to fuse panel dedicated with breaker"
+				}, {
+					"packageId": "SS_DP_15_25_D_X",
+					"tpvPrice": "$856.30",
+					"displayValue": "Includes installation of one 3 PRONG DUPLEX 125 VAC 15 AMP outlet receptacle up to 25' run back to fuse panel with dedicated breaker"
+				}, {
+					"packageId": "SS_DP_15_50_D_X",
+					"tpvPrice": "$1,053.90",
+					"displayValue": "Includes installation of one 3 PRONG DUPLEX 125 VAC 15 AMP outlet receptacle up to 50' run back to fuse panel with dedicated breaker"
+				}, {
+					"packageId": "SS_DP_15_25_ND_X",
+					"tpvPrice": "$671.86",
+					"displayValue": "Includes installation of one 3 PRONG DUPLEX 125 VAC 15 AMP outlet receptacle up to 25' run back to fuse panel with non-dedicated breaker"
+				}, {
+					"packageId": "SS_DP_15_50_ND_X",
+					"tpvPrice": "$902.40",
+					"displayValue": "Includes installation of one 3 PRONG DUPLEX 125 VAC 15 AMP outlet receptacle up to 50' run back to fuse panel with non-dedicated breaker"
+				}],
+				"srsGroundBar": {
+					"packageId": "SS_AC_GB_X",
+					"tpvPrice": "$494.01",
+					"displayValue": "Installation of a ground bar attached to building steel using #6 AWG gauge wire"
+				}
+			}
+		},
+		"uss": {
+			"code": "PR_MSSP_SEC_APP_USS",
+			"title": "Unified Security Services",
+			"saleEnable":"Y",
+			"techEnable":"Y",
+			"isProductControlled":"TRUE",
+			"rtbProductCode":["PR_MSSP_SEC_APP", "PR_MSSP_SEC_ETPS"],
+			"generalDescription": "Verizon Unified Security Services is a comprehensive, managed security service designed to protect the network edge where IP data comes in and flows out of your organization and works 24 hours a day, 365 days per year providing a unified approach to network edge security. The service can protect MPLS or Internet network circuits provided by Verizon or any other carrier up to a transfer rate of 1 Gbps.",
+			"preselectorOption":["Up to 100Mbps","Up to 250Mbps","Up to 1Gbps"],
+			"preselectorOptionRelationShip":{
+				"Up to 100Mbps": ["USS_SMALL_BASIC","USS_SMALL_INTER","USS_SMALL_ADV"],
+				"Up to 250Mbps": ["USS_MEDIUM_BASIC","USS_MEDIUM_INTER", "USS_MEDIUM_ADV"],
+				"Up to 1Gbps": ["USS_LARGE_BASIC","USS_LARGE_INTER","USS_LARGE_ADV"]
+			},
+			"preselectorTitle":"Select Circuit",
+			"standardPackages": {
+				"USS_SMALL_BASIC": {
+					"title": "Basic",
+					"attributes": {
+						"Speed up to": "100 Mbps",
+						"Basic Network Firewall": "Yes",
+						"VPN Services": "Site to Site & Remote",
+						"Gateway (Anti-Virus / Anti-Spam)": "Yes",
+						"Secure Guest Wifi": "Yes (includes modem)",
+						"Wifi only on the 92D device": "Yes"
+					}
+				},
+				"USS_SMALL_INTER": {
+					"title": "Intermediate",
+					"attributes": {
+						"Speed up to": "100 Mbps",
+						"Web Content Filtering": "Yes",
+						"VPN Services": "Site to Site & Remote",
+						"Intrusion Detection System": "Yes",
+						"Intrusion Protection System": "Yes",
+						"Layer 7 Application Controls": "Yes"
+					}
+				},
+				"USS_SMALL_ADV": {
+					"title": "Advanced",
+					"attributes": {
+						"Speed up to": "100 Mbps",
+						"SSL Encrypted Traffic Inspection": "Yes",
+						"Data Loss Prevention (DLP)": "Yes",
+						"VoIP Prioritization": "Yes",
+						"Explicit Proxy Web Optimization": "Yes",
+						"Business Continuity (Within VZ)": "Yes"
+					}
+				},
+				"USS_MEDIUM_BASIC": {
+					"title": "Basic",
+					"attributes": {
+						"Speed up to": "250 Mbps",
+						"Basic Network Firewall": "Yes",
+						"VPN Services": "Site to Site & Remote",
+						"Gateway (Anti-Virus / Anti-Spam)": "Yes",
+						"Secure Guest Wifi": "Yes (includes modem)",
+						"Wifi only on the 92D device": "Yes"
+					}
+				},
+				"USS_MEDIUM_INTER": {
+					"title": "Intermediate",
+					"attributes": {
+						"Speed up to": "250 Mbps",
+						"Web Content Filtering": "Yes",
+						"VPN Services": "Site to Site & Remote",
+						"Intrusion Detection System": "Yes",
+						"Intrusion Protection System": "Yes",
+						"Layer 7 Application Controls": "Yes"
+					}
+				},
+				"USS_MEDIUM_ADV": {
+					"title": "Advanced",
+					"attributes": {
+						"Speed up to": "250 Mbps",
+						"SSL Encrypted Traffic Inspection": "Yes",
+						"Data Loss Prevention (DLP)": "Yes",
+						"VoIP Prioritization": "Yes",
+						"Explicit Proxy Web Optimization": "Yes",
+						"Business Continuity (Within VZ)": "Yes"
+					}
+				},
+				"USS_LARGE_BASIC": {
+					"title": "Basic",
+					"attributes": {
+						"Speed up to": "1 Gbps",
+						"Basic Network Firewall": "Yes",
+						"VPN Services": "Site to Site & Remote",
+						"Gateway (Anti-Virus / Anti-Spam)": "Yes",
+						"Secure Guest Wifi": "Yes (includes modem)",
+						"Wifi only on the 92D device": "Yes"
+					}
+				},
+				"USS_LARGE_INTER": {
+					"title": "Intermediate",
+					"attributes": {
+						"Speed up to": "1 Gbps",
+						"Web Content Filtering": "Yes",
+						"VPN Services": "Site to Site & Remote",
+						"Intrusion Detection System": "Yes",
+						"Intrusion Protection System": "Yes",
+						"Layer 7 Application Controls": "Yes"
+					}
+				},
+				"USS_LARGE_ADV": {
+					"title": "Advanced",
+					"attributes": {
+						"Speed up to": "1 Gbps",
+						"SSL Encrypted Traffic Inspection": "Yes",
+						"Data Loss Prevention (DLP)": "Yes",
+						"VoIP Prioritization": "Yes",
+						"Explicit Proxy Web Optimization": "Yes",
+						"Business Continuity (Within VZ)": "Yes"
+					}
+				}
+			},
+			"customAttributes": {
+				"terms":["12","24","36","48","60"]
+			}
+		},
+		"ussc": {
+			"code": "PR_USS_CLD",
+			"title": "Unified Security Services Cloud",
+			"saleEnable":"Y",
+			"techEnable":"Y",
+			"preselectorOption":["Up to 100Mbps","Up to 250Mbps","Up to 1Gbps"],
+			"preselectorOptionRelationShip":{
+				"Up to 100Mbps": ["CLOUD_SMALL_FIREWALL","CLOUD_SMALL_BASIC","CLOUD_SMALL_INTER","CLOUD_SMALL_ADV"],
+				"Up to 250Mbps": ["CLOUD_MED_FIREWALL","CLOUD_MED_BASIC","CLOUD_MED_INTER","CLOUD_MED_ADV"],
+				"Up to 1Gbps": ["CLOUD_LARGE_FIREWALL","CLOUD_LARGE_BASIC","CLOUD_LARGE_INTER","CLOUD_LARGE_ADV"]
+			},
+			"preselectorTitle":"Select Circuit",
+			"generalDescription": "Verizon Unified Security Services Cloud is a comprehensive, managed security service designed to protect the network edge where IP data comes in and flows out of your organization and works 24 hours a day, 365 days per year providing a unified approach to network edge security. The service can protect MPLS or Internet network circuits provided by Verizon or any other carrier up to a transfer rate of 1 Gbps.",
+			"standardPackages": {
+				"CLOUD_SMALL_FIREWALL": {
+					"title": "Firewall",
+					"attributes": {
+						"Speed up to": "100 Mbps",
+						"Intrusion Protection System": "Yes",
+						"Network Firewall": "Yes"
+					}
+				},
+				"CLOUD_SMALL_BASIC": {
+					"title": "Basic",
+					"attributes": {
+						"Speed up to": "100 Mbps",
+						"Visual Private Newtwork": "Yes",
+						"Inline (Anti-Virus/SPAM)": "Yes"
+					}
+				},
+				"CLOUD_SMALL_INTER": {
+					"title": "Intermediate",
+					"attributes": {
+						"Speed up to": "100 Mbps",
+						"Web Content Filtering": "Yes",
+						"IDS/IPS": "Yes",
+						"Basic plus ": "Yes",
+						"Layer 7 Application Controls": "Yes"
+					}
+				},
+				"CLOUD_SMALL_ADV": {
+					"title": "Advanced",
+					"attributes": {
+						"Speed up to": "100 Mbps",
+						"Intermediate plus": "Yes",
+						"SSL encrypted": "Yes",
+						"Traffic inspection": "Yes",
+						"Data Leakage Prevention": "Yes",
+						"Web Optimization": "Yes"
+					}
+				},
+				"CLOUD_MED_FIREWALL": {
+					"title": "Firewall",
+					"attributes": {
+						"Speed up to": "250 Mbps",
+						"Intrusion Protection System": "Yes",
+						"Network Firewall": "Yes"
+					}
+				},
+
+				"CLOUD_MED_BASIC": {
+					"title": "Basic",
+					"attributes": {
+						"Speed up to": "250 Mbps",
+						"Visual Private Newtwork": "Yes",
+						"Inline (Anti-Virus/SPAM)": "Yes"
+					}
+				},
+				"CLOUD_MED_INTER": {
+					"title": "Intermediate",
+					"attributes": {
+						"Speed up to": "250 Mbps",
+						"Web Content Filtering": "Yes",
+						"IDS/IPS": "Yes",
+						"Basic plus ": "Yes",
+						"Layer 7 Application Controls": "Yes"
+					}
+				},
+				"CLOUD_MED_ADV": {
+					"title": "Advanced",
+					"attributes": {
+						"Speed up to": "250 Mbps",
+						"Intermediate plus": "Yes",
+						"SSL encrypted": "Yes",
+						"Traffic inspection": "Yes",
+						"Data Leakage Prevention": "Yes",
+						"Web Optimization": "Yes"
+					}
+				},
+					"CLOUD_LARGE_FIREWALL": {
+					"title": "Firewall",
+					"attributes": {
+						"Speed up to": "1 Gbps",
+						"Intrusion Protection System": "Yes",
+						"Network Firewall": "Yes"
+					}
+				},
+				"CLOUD_LARGE_BASIC": {
+					"title": "Basic",
+					"attributes": {
+						"Speed up to": "1 Gbps",
+						"Visual Private Newtwork": "Yes",
+						"Inline (Anti-Virus/SPAM)": "Yes"
+					}
+				},
+				"CLOUD_LARGE_INTER": {
+					"title": "Intermediate",
+					"attributes": {
+						"Speed up to": "1 Gbps",
+						"Web Content Filtering": "Yes",
+						"IDS/IPS": "Yes",
+						"Basic plus ": "Yes",
+						"Layer 7 Application Controls": "Yes"
+					}
+				},
+				"CLOUD_LARGE_ADV": {
+					"title": "Advanced",
+					"attributes": {
+						"Speed up to": "1 Gbps",
+						"Intermediate plus": "Yes",
+						"SSL encrypted": "Yes",
+						"Traffic inspection": "Yes",
+						"Data Leakage Prevention": "Yes",
+						"Web Optimization": "Yes"
+					}
+				}
+			},
+			"customAttributes": {
+				"terms":["12","24","36","48","60"]
+			}
+		},
+		"vce": {
+			"code": "PR_VCE",
+			"saleEnable":"Y",
+			"techEnable":"Y",
+			"title": "Virtual Communications Express",
+			"isProductControlled": "TRUE",
+			"rtbProductCode": ["PR_VCE"],
+			"generalDescription": "Verizon’s Virtual Communications Express (VCE) is an advanced unified communications service that helps your business become more efficient and productive while helping you control costs. Get the latest productivity features with no large capex investment all delivered via the cloud.   VCE gives you the same great features in the office, on the move or in the home office.  Just buy and use what you need when you need it.  VCE scales easily from the small business to the large enterprise. ",
+			"customFields" : {
+				"serviceCommitments" : {
+					"0" : "12",
+					"1" : "24",
+					"2" : "36",
+					"3" : "48",
+					"4" : "60",
+					"5" : "72",
+					"6" : "84",
+					"7" : "96",
+					"8" : "108",
+					"9" : "120"
+				},
+				"CPETemplate": {
+					"0": "VCE Packetsmart 150",
+					"1": "VCE Packetsmart 500"
+				},
+				"CPEBillingMethod": {
+					"0": "Purchase",
+					"1": "Monthly Recurring Plan (MRP)",
+					"2": "Customer Provided",
+					"3": "Direct Lease"
+				},
+				"Telephone": {
+					"0": "",
+					"1": "Polycom VVX 101",
+					"2": "VPolycom VVX 201",
+					"3": "Polycom VVX 310",
+					"4": "VPolycom VVX 410",
+					"5": "Polycom VVX 500",
+					"6": "VPolycom VVX 600"
+				}
+			},
+			"customAttributes": {
+				"terms":["12","24","36","48","60"]
+			}
+		},
+        "vns": {
+			"code": "PR_VNS",
+			"saleEnable":"Y",
+			"techEnable":"Y",
+			"title": "Virtual Network Services",
+			"isProductControlled": "TRUE",
+			"rtbProductCode": ["PR_VNS"],
+			"generalDescription": "Verizon Virtual Network Services is a comprehensive suite of the next generation Software Defined Network Services that enables enterprise customers to replace appliance-based equipment to provide significant total cost of ownership and time-to-market advantages.  Virtual Network Services such as SD-WAN, Security, WAN Optimization, and others are globally available and can be deployed on a Customer Premise using Universal Customer Premise Equipment (uCPE) or in Verizon’s Telco Grade Data Centers for a Cloud based deployment.",
+			"customFields" : {
+				"serviceCommitments" : {
+					"0" : "12",
+					"1" : "24",
+					"2" : "36",
+					"3" : "48",
+					"4" : "60",
+					"5" : "72",
+					"6" : "84",
+					"7" : "96",
+					"8" : "108",
+					"9" : "120"
+				},
+                "speeds": ["56 Kbps", "64 Kbps", "256 Kbps", "512 Kbps", "1 Mbps", "1.5 Mbps", "2 Mbps", "3 Mbps", "4 Mbps", "4.6 Mbps", "5 Mbps", "6 Mbps", "7 Mbps", "8 Mbps", "9 Mbps", "10 Mbps", "15 Mbps", "20 Mbps", "30 Mbps", "40 Mbps", "45 Mbps", "50 Mbps", "80 Mbps", "100 Mbps", "150 Mbps", "155 Mbps", "200 Mbps", "300 Mbps", "400 Mbps", "500 Mbps", "600 Mbps", "622 Mbps", "800 Mbps", "1 Gbps", "1.5 Gbps", "2 Gbps", "2.5 Gbps", "5 Gbps", "8 Gbps", "10 Gbps"],
+                "VNS": {
+					"0": "Security",
+					"1": "WAN Optimization",
+					"2": "SD-WAN",
+					"3": "Routing"
+				},
+                "MWAN": {
+                    "0": "Virtual Host Management"
+				},
+                "WANAnalysis": {
+                    "0": "WAN Analysis Reporting"
+				},
+				"CPEBillingMethod": {
+					"0": "Purchase",
+					"1": "Monthly Recurring Plan (MRP)"
+				}
+			},
+			"customAttributes": {
+				"terms":["12","24","36","48","60"],
+                "requiredConfig": ["Vendor", "Service Level", "Capacity"]
+			}
+		}
+	}
+}

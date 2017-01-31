@@ -1,0 +1,28 @@
+<script>
+    document.title = "Parse JSON";
+</script>
+<form novalidate name="fileForm" ng-submit="parseJSONToFile()">
+    <div layout="column" layout-fill>
+        <div flex-gt-sm="30">
+            <div layout="row" layout-align="center center">
+                <md-input-container flex-gt-sm="30" flex-lt-sm="80">
+                    <label>Enter the JSON String</label>
+                    <textarea ng-model="jsonInput" md-maxlength="150" rows="5" name="jsonInput" required md-select-on-focus></textarea>
+                </md-input-container>
+            </div>
+        </div>
+        <div flex-gt-sm="15">
+            <div layout="row" layout-align="center center">
+                <md-input-container flex-gt-sm="30" flex-sm="80" flex-xs="100">
+                    <label>Enter the JSON Path</label>
+                    <input ng-model="jsonPath" type="text" name="jsonPath" required>
+                </md-input-container>
+            </div>
+        </div>
+        <div flex-gt-sm="10">
+            <div layout="row" layout-align="center center">
+                <md-button type="submit" class="md-raised md-primary" ng-disabled="!fileForm.$valid">Parse</md-button>
+            </div>
+        </div>
+    </div>
+</form>

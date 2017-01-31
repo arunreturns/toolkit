@@ -1,0 +1,54 @@
+<script>
+    document.title = "Compare JSON";
+</script>
+
+<div layout="column" layout-fill>
+    <div flex-gt-sm="30" flex="30">
+        <form novalidate name="jsonForm" ng-submit="validate()">
+            <div layout="row" layout-align="space-around stretch">
+                <md-button class="md-raised md-primary" ngf-select="upload($file, 'firstJSON')" ng-disabled="firstJSON">
+                    {{ 
+                        firstJSON ?
+                           firstJSON === 'Done' ? 'Uploaded First File' : 'Uploading File.. Please wait' : 
+                           'Upload First File' 
+                    }}
+                </md-button>
+                
+                <md-button class="md-raised md-primary" ngf-select="upload($file, 'secondJSON')" ng-disabled="secondJSON">
+                    {{ 
+                        secondJSON ?
+                           secondJSON === 'Done' ? 'Uploaded Second File' : 'Uploading File.. Please wait' : 
+                           'Upload Second File' 
+                    }}
+                </md-button>
+            </div>
+            
+            <div layout="row" layout-align="center center">
+                <md-button class="md-raised md-primary" ng-click="validate()"> <!--ng-disabled="firstJSON !== 'Done' || secondJSON !== 'Done'"  -->
+                    Validate
+                </md-button>
+            </div>
+        </form>
+    </div>
+    <div flex-gt-sm="70" flex="70" ng-if="differences.length > 0 ">
+        <div layout="row" layout-align="space-around stretch">
+            <md-list>
+                <md-list-item class="md-3-line md-long-text" ng-repeat="diff in differences">
+                    <div class="md-list-item-text">
+                        <h3>{{ diff.path.join("->") }}</h3>
+                        <p>
+                            <div md-colors="{background: '{{getColor(diff.kind)}}'}" layout="row" layout-align="space-around stretch">
+                                <div flex="50" layout-padding>
+                                    {{diff.lhs || '' }}
+                                </div>
+                                <div flex="50" layout-padding>
+                                    {{diff.rhs || '' }}
+                                </div>
+                            </div>
+                        </p>
+                    </div>
+                </md-list-item>
+            </md-list>
+        </div>
+    </div>
+</div>

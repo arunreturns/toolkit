@@ -1,0 +1,34 @@
+<script>
+    document.title = "Frame Viewer";
+</script>
+
+<div layout="column" layout-fill>
+    <div flex-gt-sm="15">
+        <div layout="row" layout-align="center center">
+            <md-input-container flex-gt-sm="30" flex-lt-sm="80">
+                <label>Youtube URL Id</label>
+                <input ng-model="urlVal" ng-change="changeURL()">
+            </md-input-container>
+        </div>
+        
+        <div layout="row" layout-align="center center">
+            <md-input-container flex-gt-sm="15" flex-lt-sm="80">
+                <label>Enter Width</label>
+                <input ng-model="frameWidth" value="frameWidth">
+            </md-input-container>
+            
+            <md-input-container flex-gt-sm="15" flex-lt-sm="80">
+                <label>Enter Height</label>
+                <input ng-model="frameHeight" value="frameHeight">
+            </md-input-container>
+        </div>
+    </div>
+    <div flex="5"></div>
+    <div flex-gt-sm="{{frameHeight}}" flex="66" ng-if="fullURL">
+        <div layout="column" layout-fill layout-align="center space-around">
+            <div layout="row" flex="100" layout-align="center">
+                <iframe ng-src="{{fullURL}}" allowfullscreen flex-gt-sm="{{frameWidth}}" flex="100"></iframe>    
+            </div>
+        </div>
+    </div>
+</div>

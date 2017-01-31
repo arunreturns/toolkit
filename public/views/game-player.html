@@ -1,0 +1,21 @@
+<script>
+    document.title = "Game Player";
+</script>
+
+<div layout="column" layout-fill>
+    <div flex-gt-sm="15">
+        <div layout="row" layout-align="center center">
+            <md-select placeholder="Select Game" ng-model="gameSrc" md-on-open="getGames()" flex-gt-sm="30" flex-lt-sm="80">
+                <md-option ng-value="game" ng-repeat="game in games">{{game}}</md-option>
+            </md-select>
+        </div>
+    </div>
+    <div flex="5"></div>
+    <div flex-gt-sm="{{frameHeight}}" flex="66" ng-if="gameSrc">
+        <div layout="column" layout-fill layout-align="center space-around">
+            <div layout="row" flex="100" layout-align="center">
+                <div flash-embed src="{{gameSrc}}" flex-gt-sm="{{frameWidth}}" flex="100"></div>
+            </div>
+        </div>
+    </div>
+</div>

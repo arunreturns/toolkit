@@ -1,0 +1,48 @@
+<script>
+    document.title = "Create GIF";
+</script>
+
+<div class='container'>
+    <div class="page-header text-center">
+        <h3>Create GIF</h3>
+    </div>
+    <div class="row">
+        <div class="col-sm-2 col-sm-offset-5">
+            <select ng-model="inputType" class="form-control">
+                <option ng-repeat='inpType in inputTypes' value='{{inpType}}'>{{ inpType }}</option>
+            </select>
+        </div>
+    </div>
+    <hr/>
+    <div class='row' ng-show="inputType === 'Upload'">
+        <div class='col-sm-8 col-sm-offset-2'>
+            <div class="form-group">
+                <button type="file" class="btn btn-success" ngf-select="uploadFileAndConvert($file, 'inputFile')" 
+                    ng-disabled="clientJSON">
+                    <span class="glyphicon glyphicon-upload"></span> 
+                    {{ 
+                        inputFile ?
+                           inputFile === 'Done' ? 'Uploaded Video File' : 'Uploading File.. Please wait' : 
+                           'Upload Video File' 
+                    }}
+                </button>
+            </div>
+            <div class="form-group">
+                <button class='btn btn-success' ng-click='convertFileFromSrc()'>Convert</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class='row' ng-show="inputType === 'URL'">
+        <div class='col-sm-4 col-sm-offset-4'>
+            <form name="convertForm">
+                <div class="form-group">
+                    <input type='text' placeholder="Enter URL of File" ng-model='videoUrl' name='videoUrl' class='form-control' required/>
+                </div>
+                <div class="form-group">
+                    <button class='btn btn-success' ng-click='convertFileFromURL()' ng-disabled='!convertForm.$valid'>Convert</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

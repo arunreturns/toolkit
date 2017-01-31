@@ -1,0 +1,14 @@
+{
+  "name": "swfobject",
+  "main": "./swfobject/swfobject.js",
+  "homepage": "https://github.com/swfobject/swfobject",
+  "_release": "232ce6e024",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "232ce6e024736a3877a61b4343dea0a383bca56d"
+  },
+  "_source": "https://github.com/swfobject/swfobject.git",
+  "_target": "*",
+  "_originalSource": "swfobject"
+}
