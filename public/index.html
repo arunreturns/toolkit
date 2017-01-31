@@ -9,6 +9,29 @@
     <link href='https://fonts.googleapis.com/css?family=Jim+Nightshade' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
 
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Web Application Manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Toolkit">
+    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Toolkit">
+    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#00bcd4">
+
+    <!-- Color the status bar on mobile devices -->
+    <meta name="theme-color" content="#00bcd4">
     <!-- Angular Material style sheet -->
     <link rel="stylesheet" href="libs/angular-material/angular-material.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -94,36 +117,6 @@
                 <md-progress-circular md-mode="indeterminate" class="md-accent md-hue-1" md-diameter="60"></md-progress-circular>
             </div>
         </div>
-
-
-        <!--<md-toolbar class="md-hue-2">-->
-        <!--    <div class="md-toolbar-tools">-->
-        <!--        <h2 class="md-flex">-->
-        <!--            <span>Swiss Army Unblocker</span>-->
-        <!--        </h2>-->
-        <!--        <span flex></span>-->
-        <!--    </div>-->
-        <!--</md-toolbar>-->
-        <!--<md-content>-->
-        <!--    <md-nav-bar md-selected-nav-item="currentNavItem" nav-bar-aria-label="navigation links">-->
-        <!--        <md-nav-item ng-repeat="link in links" name='{{link.display}}' md-nav-href="{{link.url}}">-->
-        <!--            {{link.display}}-->
-        <!--        </md-nav-item>-->
-        <!--    </md-nav-bar>-->
-
-        <!--    <div class="ui-view-content" layout-padding>-->
-        <!--        <div ui-view></div>-->
-        <!--    </div>-->
-        <!--</md-content>-->
-        <!--<div class="page-header">-->
-        <!--    <h3>Swiss Army Unbl**ker</h3>-->
-        <!--</div>-->
-        <!--<ul class="nav nav-pills nav-justified">-->
-        <!--    <li role="presentation" ng-repeat="link in links" ng-class="isSelected($index) ? 'active' : ''">-->
-        <!--        <a href="{{link.url}}" ng-click="selectTab($index)">{{link.display}}</a>-->
-        <!--    </li>-->
-        <!--</ul>-->
-        <!--<div ui-view></div>-->
     </div>
 </body>
 
