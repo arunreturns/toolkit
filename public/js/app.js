@@ -1,4 +1,4 @@
-angular.module('fileApp', ['appControllers','appDirectives','appServices','appRoutes','ngAnimate', 'ngMaterial'])
+angular.module('toolkitApp', ['appControllers','appDirectives','appServices','appRoutes','ngAnimate', 'ngMaterial'])
 .config(function($sceDelegateProvider) {
     if ('serviceWorker' in navigator) {
         console.log('Service Worker is supported');

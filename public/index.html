@@ -75,47 +75,45 @@
 
 </head>
 
-<body ng-app="fileApp" ng-cloak>
-    <div ng-controller="AppCtrl" layout-fill>
-        <md-toolbar>
-            <div class="md-toolbar-tools">
-                <md-button class="md-icon-button" aria-label="Settings" ng-click="toggleNav()">
-                    <md-icon class="material-icons">menu</md-icon>
-                </md-button>
-                <h2>
-                    <span>Toolkit</span>
-                </h2>
-                <span flex></span>
-            </div>
+<body ng-app="toolkitApp" ng-controller="AppCtrl" layout="column">
+    <md-toolbar>
+        <div class="md-toolbar-tools">
+            <md-button class="md-icon-button" aria-label="Settings" ng-click="toggleNav()">
+                <md-icon class="material-icons">menu</md-icon>
+            </md-button>
+            <h2>
+                <span>Toolkit</span>
+            </h2>
+            <span flex></span>
+        </div>
+    </md-toolbar>
+
+    <md-sidenav class="md-sidenav-left" md-component-id="left" md-disable-backdrop>
+        <md-toolbar class="md-theme-indigo">
+            <h1 class="md-toolbar-tools">Links</h1>
         </md-toolbar>
 
-        <md-sidenav class="md-sidenav-left" md-component-id="left" md-disable-backdrop>
-            <md-toolbar class="md-theme-indigo">
-                <h1 class="md-toolbar-tools">Links</h1>
-            </md-toolbar>
+        <md-content layout-padding>
+            <md-menu-content width="4">
+                <md-menu-item ng-repeat="menu in menuLinks">
+                    <md-button href='{{menu.link}}' ng-click="toggleNav()">
+                        <md-icon class="material-icons md-primary" md-menu-align-target>{{menu.icon}}</md-icon>
+                        {{menu.name}}
+                    </md-button>
+                </md-menu-item>
+            </md-menu-content>
+            </md-menu>
+        </md-content>
+    </md-sidenav>
+    <div flex layout="column" layout-fill layout-align="center stretch">
+        <md-content flex layout-padding layout="row" layout-fill>
+            <div ui-view class='view' flex layout-align="center center" ng-hide='ui.isLoading'></div>
+        </md-content>
+    </div>
 
-            <md-content layout-padding>
-                <md-menu-content width="4">
-                    <md-menu-item ng-repeat="menu in menuLinks">
-                        <md-button href='{{menu.link}}' ng-click="toggleNav()">
-                            <md-icon class="material-icons md-primary" md-menu-align-target>{{menu.icon}}</md-icon>
-                            {{menu.name}}
-                        </md-button>
-                    </md-menu-item>
-                </md-menu-content>
-                </md-menu>
-            </md-content>
-        </md-sidenav>
-        <div flex layout="column" layout-fill layout-align="center stretch">
-            <md-content flex layout-padding layout="row" layout-fill>
-                <div ui-view class='view' flex layout-align="center center" ng-hide='ui.isLoading'></div>
-            </md-content>
-        </div>
-
-        <div layout="row" layout-align="center center" ng-show='ui.isLoading'>
-            <div class='loading'>
-                <md-progress-circular md-mode="indeterminate" class="md-accent md-hue-1" md-diameter="60"></md-progress-circular>
-            </div>
+    <div layout="row" layout-align="center center" ng-show='ui.isLoading'>
+        <div class='loading'>
+            <md-progress-circular md-mode="indeterminate" class="md-accent md-hue-1" md-diameter="60"></md-progress-circular>
         </div>
     </div>
 </body>

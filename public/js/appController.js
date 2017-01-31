@@ -140,6 +140,7 @@ angular.module('appControllers', ['ngMessages', 'ngFileUpload', 'ngMaterial'])
             $log.info('[UploadCtrl] => Error status: ' + resp.status);
         }, function (evt) {
             file.progress = Math.min(100, parseInt(100.0 * evt.loaded / evt.total, 10));
+            $scope[type].progress = file.progress;
             $log.info('[UploadCtrl] => Progress: ' + file.progress + '% ' + evt.config.data.file.name);
         }, function (err) {
             if ( err ) {
