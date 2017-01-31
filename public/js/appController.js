@@ -221,13 +221,10 @@ angular.module('appControllers', ['ngMessages', 'ngFileUpload', 'ngMaterial'])
 .controller('GamePlayerCtrl', function($scope, $log, HttpWrapper){
     
     $scope.getGames = function(){
-        return HttpWrapper.get('/getGames')
-            .success(function(gamesList){
-                $scope.games = gamesList;
-            })
-            .error(function(err) {
-                $log.error(err);
-            });
+        HttpWrapper.get('/getGames')
+        .success(function(gamesList){
+            $scope.games = gamesList;
+        });
     };
     
 })
