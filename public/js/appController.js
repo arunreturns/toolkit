@@ -106,6 +106,9 @@ angular.module('appControllers', ['ngMessages', 'ngFileUpload', 'ngMaterial'])
         HttpWrapper.get('/validate')
         .success(function(diff){
             $scope.differences = diff;
+        }).error(function(err){
+            $log.error(err);
+            $scope.firstJSON = $scope.secondJSON = null;
         });
     };
     
