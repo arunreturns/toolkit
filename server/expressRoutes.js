@@ -60,7 +60,7 @@ module.exports = function(app) {
     
     app.post('/getFile', function(req, res){
         var src = req.body.URL;
-        var outputFile = "./fetch/" + req.body.zipName + ".zip";
+        var outputFile = __dirname + "/fetch/" + req.body.zipName + ".zip";
         
         var download = wget.download(src, outputFile);
         download.on('error', function(err) {
@@ -81,13 +81,13 @@ module.exports = function(app) {
 
     app.get('/validate', function (req, res) {
         var diff = require('deep-diff').diff;
-        var firstJSON = require('./firstJSON.json');
-        var secondJSON = require('./secondJSON.json');
+        var firstJSON = require(__dirname + '/firstJSON.json');
+        var secondJSON = require(__dirname + '/secondJSON.json');
         
         var differences = diff(firstJSON, secondJSON);
 
-        fs.unlinkSync('./server/firstJSON.json');
-        fs.unlinkSync('./server/secondJSON.json');
+        fs.unlinkSync(__dirname + '/server/firstJSON.json');
+        fs.unlinkSync(__dirname + '/server/secondJSON.json');
         //console.log("Diff", differences);
         res.status(200).send(differences);
     });
@@ -99,7 +99,7 @@ module.exports = function(app) {
 
         var readStream = fs.createReadStream(file.path);
 
-        var writeStream = fs.createWriteStream('./server/' + type + '.json');
+        var writeStream = fs.createWriteStream('/server/' + type + '.json');
         
         readStream.pipe(writeStream);
 
@@ -145,7 +145,7 @@ module.exports = function(app) {
     });
     
     app.get('/getGames', function(req, res){
-        fs.readdir('./public', function(err, files){
+        fs.readdir(__dirname + '/public', function(err, files){
             if ( err ){
                 console.log(err);
                 res.end();
@@ -167,7 +167,7 @@ module.exports = function(app) {
     app.post('/getFileFromUrl', function(req, res){
         var src = req.body.url;
         console.log("URL Is ", src);
-        var outputFile = "./fetch/videos/output.mp4";
+        var outputFile = "/fetch/videos/output.mp4";
         
         var download = wget.download(src, outputFile);
         download.on('error', function(err) {
@@ -179,7 +179,7 @@ module.exports = function(app) {
         download.on('end', function(output) {
             console.log("End " + output);
             createGifFromVideo(outputFile, function(){
-                res.sendfile("./fetch/gifs/output.gif");
+                res.sendfile("/fetch/gifs/output.gif");
             });
         });
         download.on('progress', function(progress) {
@@ -195,8 +195,8 @@ module.exports = function(app) {
     
     function createGifFromVideo(filename, callback) {
         console.log("Inside createGifFromVideo");
-        var input = path.join('./fetch/videos/', filename);
-        var output = path.join('./fetch/gifs/', 'output.gif');
+        var input = path.join('/fetch/videos/', filename);
+        var output = path.join('/fetch/gifs/', 'output.gif');
     
         var gif = fs.createWriteStream(output);
     
