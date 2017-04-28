@@ -81,30 +81,39 @@ module.exports = function(app) {
 
     app.get('/validate', function (req, res) {
         var diff = require('deep-diff').diff;
-        var firstJSON = require(__dirname + '/server/firstJSON.json');
-        var secondJSON = require(__dirname + '/server/secondJSON.json');
+        var firstJSONPath = path.join(__dirname, "firstJSON.json");
+        var secondJSONPath = path.join(__dirname, "secondJSON.json");
+        console.log("[/validate] => First JSON Path " + firstJSONPath);
+        console.log("[/validate] => Second JSON Path " + secondJSONPath);
+        var firstJSON = require(firstJSONPath);
+        var secondJSON = require(secondJSONPath);
         
         var differences = diff(firstJSON, secondJSON);
 
-        fs.unlinkSync(__dirname + '/server/firstJSON.json');
-        fs.unlinkSync(__dirname + '/server/secondJSON.json');
+        fs.unlinkSync(firstJSONPath);
+        fs.unlinkSync(secondJSONPath);
         //console.log("Diff", differences);
         res.status(200).send(differences);
     });
 
     app.post('/uploadFiles', multipartyMiddleware, function (req, res) {
-        //console.log("{uploadFiles} => Inside Upload File");
+        console.log("[/uploadFiles] => Inside Upload File");
         var file = req.files.file;
         var type = req.body.type;
-
+        var filePath = path.join(__dirname, type + ".json");
+        console.log("[/uploadFiles] => File Path is " + filePath);
+        
+        if ( !fs.existsSync(filePath) ){
+            console.log("[/uploadFiles] => Path doesn't exist");
+            fs.closeSync(fs.openSync(filePath, 'a'));
+        }
         var readStream = fs.createReadStream(file.path);
-
-        var writeStream = fs.createWriteStream(__dirname + '/server/' + type + '.json');
+        var writeStream = fs.createWriteStream(filePath);
         
         readStream.pipe(writeStream);
-
+        
         writeStream.on('close', function (writtenFile) {
-            //console.log("{uploadFiles} => " + writtenFile + 'Written To DB');
+            console.log("[/uploadFiles] => File Uploaded successfully");
             res.status(200).send("File Uploaded successfully");
         });
     });
@@ -167,7 +176,7 @@ module.exports = function(app) {
     app.post('/getFileFromUrl', function(req, res){
         var src = req.body.url;
         console.log("URL Is ", src);
-        var outputFile = __dirname + "/server/fetch/videos/output.mp4";
+        var outputFile = path.join(__dirname, 'fetch', "output.mp4");
         
         var download = wget.download(src, outputFile);
         download.on('error', function(err) {
@@ -179,7 +188,7 @@ module.exports = function(app) {
         download.on('end', function(output) {
             console.log("End " + output);
             createGifFromVideo(outputFile, function(){
-                res.sendfile(__dirname + "/server/fetch/gifs/output.gif");
+                res.sendfile(path.join(__dirname, 'fetch', "output.gif"));
             });
         });
         download.on('progress', function(progress) {
@@ -195,8 +204,8 @@ module.exports = function(app) {
     
     function createGifFromVideo(filename, callback) {
         console.log("Inside createGifFromVideo");
-        var input = path.join(__dirname, '/server/fetch/videos/', filename);
-        var output = path.join(__dirname, '/server/fetch/gifs/', 'output.gif');
+        var input = path.join(__dirname, 'fetch', filename);
+        var output = path.join(__dirname, 'fetch', 'output.gif');
     
         var gif = fs.createWriteStream(output);
     
