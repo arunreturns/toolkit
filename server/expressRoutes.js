@@ -14,20 +14,13 @@ var sgTransport = require('nodemailer-sendgrid-transport');
 var mailer;
 module.exports = function(app) {
 
-    request.get('https://api.heroku.com/apps/toolykit/config-vars', {
-        encoding: 'utf-8'
-    }, function(error, response, body) {
-        if (error) {
-            console.log(error);
+    var options = {
+        auth: {
+            api_key: process.env.SENDGRID_KEY
         }
-        var options = {
-		    auth: {
-		        api_key: process.env.SENDGRID_KEY
-		    }
-		};
-		mailer = nodemailer.createTransport(sgTransport(options));
-    });
-    
+    };
+    mailer = nodemailer.createTransport(sgTransport(options));
+
     var download = function(uri, resp, callback) {
         request.get(uri, {
             timeout: 1500
@@ -46,7 +39,7 @@ module.exports = function(app) {
             }
         });
     };
-    
+
     /*
 		Method to send mail to the user
 		Params: methodName		=>	For logging
@@ -56,32 +49,33 @@ module.exports = function(app) {
 				res				=> 	The response object for error and data
 				attachment		=> 	Attachement to be sent along with the mail
 	*/
-	var sendMail = function(methodName, userEmail, subject, content, res, attachment, cb){
-		var email = {
-			to: userEmail,
-			from: 'FileStore',
-			subject: subject,
-			text: content,
-			html: content,
-			attachments: []
-		};
-		if ( attachment && attachment !== null ) {
-			email.attachments.push(attachment);
-		}
-		
-		mailer.sendMail(email, function(err, resp) {
-			if (err) {
-				console.log("{" + methodName + "} Error while sending mail " + err);
-				res.status(500).send(err);	
-				res.end();
-			} else {
-				console.log("{" + methodName + "} => Mail response is " , resp);
-				res.status(200).send(resp);
-				cb();
-				res.end();
-			}
-		});
-	};
+    var sendMail = function(methodName, userEmail, subject, content, res, attachment, cb) {
+        var email = {
+            to: userEmail,
+            from: 'FileStore',
+            subject: subject,
+            text: content,
+            html: content,
+            attachments: []
+        };
+        if (attachment && attachment !== null) {
+            email.attachments.push(attachment);
+        }
+
+        mailer.sendMail(email, function(err, resp) {
+            if (err) {
+                console.log("{" + methodName + "} Error while sending mail " + err);
+                res.status(500).send(err);
+                res.end();
+            }
+            else {
+                console.log("{" + methodName + "} => Mail response is ", resp);
+                res.status(200).send(resp);
+                cb();
+                res.end();
+            }
+        });
+    };
 
     function sendZipData(res, filename) {
         fs.readFile(filename, function(err, data) {
@@ -113,16 +107,16 @@ module.exports = function(app) {
         var mailSubject = req.body.mailSubject;
         var attachmentFileName = req.body.attachmentFileName;
         var attachment = null;
-        
-        if ( attachmentFileName ){
+
+        if (attachmentFileName) {
             var attachmentPath = path.join(__dirname, attachmentFileName);
             console.log("Reading ", attachmentPath);
             attachment = {
-        		filename: attachmentFileName,
-        		content: fs.createReadStream(attachmentPath)
-    		};
+                filename: attachmentFileName,
+                content: fs.createReadStream(attachmentPath)
+            };
         }
-        sendMail("sendMail", emailAddress, mailSubject, mailContent, res, attachment, function(){
+        sendMail("sendMail", emailAddress, mailSubject, mailContent, res, attachment, function() {
             fs.unlinkSync(path.join(__dirname, attachmentFileName));
         });
     });
@@ -139,8 +133,13 @@ module.exports = function(app) {
         var src = req.body.URL;
         var outputFile = path.join(__dirname, "fetch", req.body.zipName + ".zip");
 
+        if (!fs.existsSync(outputFile)) {
+            console.log("[/getFile] => Path doesn't exist");
+            fs.closeSync(fs.openSync(outputFile, 'a'));
+        }
         var download = wget.download(src, outputFile);
         download.on('error', function(err) {
+            fs.unlinkSync(outputFile);
             res.status(500).send('Incorrect URL: ' + err);
         });
         download.on('start', function(fileSize) {
@@ -252,10 +251,10 @@ module.exports = function(app) {
     });
 
     app.get('/getGames', function(req, res) {
-        fs.readdir(__dirname + '/public', function(err, files) {
+        fs.readdir(path.join(__dirname, '/public'), function(err, files) {
             if (err) {
                 console.log(err);
-                res.end();
+                res.status(500).send(err);
             }
             var filesList = [];
             for (var i in files) {

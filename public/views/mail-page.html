@@ -7,7 +7,7 @@
             <div layout="row" layout-align="center center">
                 <md-input-container flex-gt-sm="30" flex-lt-sm="80" flex-xs="100">
                     <label>Enter the Mail Content</label>
-                    <textarea ng-model="mailContent" md-maxlength="250" rows="5" name="mailContent" required md-select-on-focus></textarea>
+                    <textarea ng-model="mailData.mailContent" autocomplete="off" md-maxlength="500" rows="5" name="mailContent" required md-select-on-focus md-no-autogrow="true"></textarea>
                 </md-input-container>
             </div>
         </div>
@@ -15,7 +15,7 @@
             <div layout="row" layout-align="center center">
                 <md-input-container flex-gt-sm="30" flex-sm="80" flex-xs="100">
                     <label>Enter the Mail Subject</label>
-                    <input ng-model="mailSubject" type="email" name="mailSubject" required>
+                    <input ng-model="mailData.mailSubject" autocomplete="off" type="text" name="mailSubject" required>
                 </md-input-container>
             </div>
         </div>
@@ -36,7 +36,7 @@
             <div layout="row" layout-align="center center">
                 <md-input-container flex-gt-sm="30" flex-sm="80" flex-xs="100">
                     <label>Enter the Mail Id</label>
-                    <input ng-model="emailAddress" type="email" name="emailAddress" required>
+                    <input ng-model="mailData.emailAddress" autocomplete="off" type="email" name="emailAddress" required>
                 </md-input-container>
             </div>
         </div>
