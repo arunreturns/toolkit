@@ -90,11 +90,20 @@
 
     <md-sidenav class="md-sidenav-left" md-component-id="left" md-disable-backdrop>
         <md-toolbar class="md-theme-indigo">
-            <h1 class="md-toolbar-tools">Links</h1>
+            <div class="md-toolbar-tools">
+            <md-button class="md-icon-button" aria-label="Settings" ng-click="toggleNav()">
+                <md-icon class="material-icons">arrow_back</md-icon>
+            </md-button>
+            <h2>
+                <span>Links</span>
+            </h2>
+            <span flex></span>
+        </div>
+            
         </md-toolbar>
 
         <md-content layout-padding>
-            <md-menu-content width="4">
+            <md-menu-content width="4" layout-fill flex="70">
                 <md-menu-item ng-repeat="menu in menuLinks">
                     <md-button href='{{menu.link}}' ng-click="toggleNav()">
                         <md-icon class="material-icons md-primary" md-menu-align-target>{{menu.icon}}</md-icon>

@@ -34,6 +34,11 @@ angular.module('appRoutes', ['ui.router'])
             templateUrl: 'views/game-player.html',
             controller: 'GamePlayerCtrl'
         })
+        .state('mail-me', {
+            url: '/mail-me',
+            templateUrl: 'views/mail-page.html',
+            controller: 'MailCtrl'
+        })
         .state('gif-creator', {
             url: '/gif-creator',
             templateUrl: 'views/gif-creator.html',

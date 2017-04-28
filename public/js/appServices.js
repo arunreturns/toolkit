@@ -41,7 +41,8 @@ service("Notification", function(){
 .service("HttpWrapper", function($http, UIService, $log){
     var HttpWrapper = {
         get: function(url, options){
-            UIService.isLoading = true;
+            if ( options && typeof options.hideLoader === 'undefined' )
+                UIService.isLoading = true;
             let httpPromise = $http.get(url, options);
             
             httpPromise.success(function(resp){
@@ -59,7 +60,8 @@ service("Notification", function(){
         },
         
         post: function(url, body, options){
-            UIService.isLoading = true;
+            if ( options && typeof options.hideLoader === 'undefined' )
+                UIService.isLoading = true;
             let httpPromise = $http.post(url, body, options);
             
             httpPromise.success(function(resp){

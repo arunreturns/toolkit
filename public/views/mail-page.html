@@ -1,0 +1,49 @@
+<script>
+    document.title = "Mail";
+</script>
+<form novalidate name="mailForm" ng-submit="sendMail()">
+    <div layout="column" layout-fill>
+        <div flex-gt-sm="30" flex="30">
+            <div layout="row" layout-align="center center">
+                <md-input-container flex-gt-sm="30" flex-lt-sm="80" flex-xs="100">
+                    <label>Enter the Mail Content</label>
+                    <textarea ng-model="mailContent" md-maxlength="250" rows="5" name="mailContent" required md-select-on-focus></textarea>
+                </md-input-container>
+            </div>
+        </div>
+        <div flex-gt-sm="30" flex="30">
+            <div layout="row" layout-align="center center">
+                <md-input-container flex-gt-sm="30" flex-sm="80" flex-xs="100">
+                    <label>Enter the Mail Subject</label>
+                    <input ng-model="mailSubject" type="email" name="mailSubject" required>
+                </md-input-container>
+            </div>
+        </div>
+        <div flex-gt-sm="30" flex="30">
+            <div layout="row" layout-align="center center">
+                <md-button class="md-raised md-primary" ngf-select="uploadAttachment($file, 'fileAttachment')" ng-disabled="fileAttachment">
+                    {{ 
+                        fileAttachment ?
+                           fileAttachment === 'Done' ? 'Uploaded Attachement' : 'Uploading Attachement.. Please wait' : 
+                           'Upload Attachement' 
+                    }}
+                    <md-progress-linear ng-show="fileAttachment !== 'Done'" md-mode="determinate" value="{{fileAttachment.progress}}"></md-progress-linear>
+                </md-button>
+            </div>
+        </div>
+        
+        <div flex-gt-sm="15">
+            <div layout="row" layout-align="center center">
+                <md-input-container flex-gt-sm="30" flex-sm="80" flex-xs="100">
+                    <label>Enter the Mail Id</label>
+                    <input ng-model="emailAddress" type="email" name="emailAddress" required>
+                </md-input-container>
+            </div>
+        </div>
+        <div flex-gt-sm="10">
+            <div layout="row" layout-align="center center">
+                <md-button type="submit" class="md-raised md-primary" ng-disabled="!mailForm.$valid">Send Mail</md-button>
+            </div>
+        </div>
+    </div>
+</form>

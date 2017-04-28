@@ -11,6 +11,7 @@ angular.module('appControllers', ['ngMessages', 'ngFileUpload', 'ngMaterial'])
         { link : '#/parse-json', icon: 'compare_arrows', name: 'Parse JSON' },
         { link : '#/reddit-viewer', icon: 'home', name: 'Reddit Viewer' },
         { link : '#/game-player', icon: 'gamepad', name: 'Games' },
+        { link : '#/mail-me', icon: 'mail', name: 'Mail' }
     ];
     
     $scope.links = [
@@ -160,7 +161,58 @@ angular.module('appControllers', ['ngMessages', 'ngFileUpload', 'ngMaterial'])
     $scope.fullURL = null;
     $scope.frameWidth = $scope.frameHeight = 50;
     $scope.changeURL = function(){
-        $scope.fullURL = 'https://www.youtube.com/embed/' + $scope.urlVal;
+        if ( $scope.urlVal.indexOf("youtube") === -1 )
+            $scope.fullURL = 'https://www.youtube.com/embed/' + $scope.urlVal;
+        else 
+            $scope.fullURL = $scope.urlVal;
+    };
+})
+
+.controller('MailCtrl', function($scope, $log, $http, Upload){
+    $scope.uploadAttachment = function (file, type) {
+        $scope[type] = file;
+        if ( !file )
+            return;
+        file.upload = Upload.upload({
+            url: 'uploadAttachment',
+            data: {
+                file: file,
+                type: type
+            }
+        });
+
+        file.upload.then(function (resp) {
+            $scope.attachmentFileName = resp.config.data.file.name;
+            $log.info('[MailCtrl] => Success ' + resp.config.data.file.name + 'uploaded');
+            $log.info('[MailCtrl] => Response: ' + resp.data);
+            $scope[type] = 'Done';
+        }, function (resp) {
+            $log.info('[MailCtrl] => Error status: ' + resp.status);
+        }, function (evt) {
+            file.progress = Math.min(100, parseInt(100.0 * evt.loaded / evt.total, 10));
+            $scope[type].progress = file.progress;
+            $log.info('[MailCtrl] => Progress: ' + file.progress + '% ' + evt.config.data.file.name);
+        }, function (err) {
+            if ( err ) {
+                $log.error(err);
+                return err;
+            }
+            $scope[type] = null;
+        });
+    };
+    $scope.sendMail = function(){
+        $http.post("/sendMail", {
+            mailContent: $scope.mailContent,
+            emailAddress: $scope.emailAddress,
+            mailSubject: $scope.mailSubject,
+            attachmentFileName: $scope.attachmentFileName
+        })
+        .success(function() {
+            $log.info("Mail Sent");
+        })
+        .error(function(err) {
+            $log.error(err);
+        });
     };
 })
 
@@ -187,7 +239,7 @@ angular.module('appControllers', ['ngMessages', 'ngFileUpload', 'ngMaterial'])
         var imageUrl = expectedResolution.url; // Pretty big right?
         HttpWrapper.post('/getImage', {
             imageUrl: imageUrl
-        })
+        }, { hideLoader: false })
         .success(function(image) {
             post.imageUrl = image;
         })
