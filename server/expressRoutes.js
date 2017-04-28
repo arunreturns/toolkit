@@ -117,7 +117,9 @@ module.exports = function(app) {
             };
         }
         sendMail("sendMail", emailAddress, mailSubject, mailContent, res, attachment, function() {
-            fs.unlinkSync(path.join(__dirname, attachmentFileName));
+            if (attachmentFileName) {
+                fs.unlinkSync(path.join(__dirname, attachmentFileName));
+            }
         });
     });
 

@@ -263,9 +263,9 @@ angular.module('appControllers', ['ngMessages', 'ngFileUpload', 'ngMaterial'])
     };
     $scope.sendMail = function() {
         $http.post("/sendMail", {
-                mailContent: $scope.mailContent,
-                emailAddress: $scope.emailAddress,
-                mailSubject: $scope.mailSubject,
+                mailContent: $scope.mailData.mailContent,
+                emailAddress: $scope.mailData.emailAddress,
+                mailSubject: $scope.mailData.mailSubject,
                 attachmentFileName: $scope.attachmentFileName
             })
             .success(function() {
@@ -273,6 +273,9 @@ angular.module('appControllers', ['ngMessages', 'ngFileUpload', 'ngMaterial'])
                 resetForm($scope.mailForm);
                 $scope.mailData = {};
                 $scope.fileAttachment = null;
+                
+                resetForm($scope.mailForm);
+                $scope.mailData = {};
             })
             .error(function(err) {
                 $log.error(err);
